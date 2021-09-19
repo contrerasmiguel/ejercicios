@@ -90,7 +90,9 @@ Estos problemas permiten experimentar con las entradas y salidas de un programa 
     * **Razonamiento:** los tres argumentos del programa son:
 
         1. hola
+
         2. como
+
         3. estas
 
-        Lo que hace el programa es leer las palabras y luego concatenarlas (pegarlas). Al leerlas no se encontrarán espacios, así que no se debe hacer ningún trabajo adicional.
+        Lo que hace el programa es leer las palabras y luego concatenarlas (pegarlas). Al leerlas no se encontrarán espacios, así que se pueden pegar tal y como se leen.
