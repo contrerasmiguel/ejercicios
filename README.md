@@ -7,11 +7,11 @@ Se alienta alienta al lector a compartir sus soluciones con el autor del problem
 ## Tabla de contenidos
 
 * [1 Entrada y salida I](#1-entrada-y-salida-i)
-  * [1.1 Conceptos básicos](#1.1-conceptos-básicos)
-  * [1.2 Problemas](#1.2-problemas)
+  * [1.1 Conceptos básicos](#11-conceptos-básicos)
+  * [1.2 Problemas](#12-problemas)
 * [2 Entrada y salida II](#2-entrada-y-salida-ii)
-  * [2.1 Conceptos básicos](#2.1-conceptos-básicos)
-  * [2.2 Problemas](#2.2-problemas)
+  * [2.1 Conceptos básicos](#21-conceptos-básicos)
+  * [2.2 Problemas](#22-problemas)
 
 ## 1 Entrada y salida I
 
@@ -107,3 +107,7 @@ Los siguientes problemas permiten jugar con la entrada estándar de los programa
 ### 2.1 Conceptos básicos
 
 * **Entrada estándar:** a diferencia de los parámetros, la entrada estándar solo se puede poner en funcionamiento *después* de que empieza la ejecución del programa, es decir, hay que indicarle al programa qué leer y cuándo leerlo. Es útil cuando los datos que debe procesar el programa no están listos antes de que arranque.
+
+### 2.2 Problemas
+
+Por hacer...
