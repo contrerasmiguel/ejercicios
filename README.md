@@ -15,9 +15,13 @@ Se alienta alienta al lector a compartir sus soluciones con el autor del problem
 
 ## 1 Entrada y salida I
 
+[ [Índice](#tabla-de-contenidos) ]
+
 Estos problemas permiten experimentar con las entradas y salidas de un programa regular.
 
 ### 1.1 Conceptos básicos
+
+[ [Índice](#tabla-de-contenidos) ]
 
 * **Entrada por parámetros:** como cuando se ejecuta *ping 8.8.8.8*, en donde *ping* es el nombre del programa y *8.8.8.8* es el argumento que se le pasa (la entrada).
 
@@ -26,6 +30,8 @@ Estos problemas permiten experimentar con las entradas y salidas de un programa 
 * **Salida estándar:** así como la entrada estándar, algunos lenguajes de programación permiten escribir datos en el flujo de salida que provee el sistema operativo. Procuraremos utilizar las instrucciones más básicas del lenguaje de programación, es decir, aquellas que permiten mostrar mensajes en la cónsola de comandos.
 
 ### 1.2 Problemas
+
+[ [Índice](#tabla-de-contenidos) ]
 
 1. Haga un programa que escriba *Hello, world!* en la salida estándar del sistema.
 
@@ -102,13 +108,19 @@ Estos problemas permiten experimentar con las entradas y salidas de un programa 
 
 ## 2 Entrada y salida II
 
+[ [Índice](#tabla-de-contenidos) ]
+
 Los siguientes problemas permiten jugar con la entrada estándar de los programas, así como profundizar un poco más en el uso de la salida estándar.
 
 ### 2.1 Conceptos básicos
 
+[ [Índice](#tabla-de-contenidos) ]
+
 * **Entrada estándar:** a diferencia de los parámetros, la entrada estándar solo se puede poner en funcionamiento *después* de que empieza la ejecución del programa, es decir, hay que indicarle al programa qué leer y cuándo leerlo. Es útil cuando los datos que debe procesar el programa no están listos antes de que arranque.
 
 ### 2.2 Problemas
+
+[ [Índice](#tabla-de-contenidos) ]
 
 1. Escriba un programa que lea un número entero desde su entrada estándar, le sume otro número aleatorio (por ejemplo, -16) y muestre el resultado en la salida estándar.
 
