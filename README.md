@@ -110,4 +110,85 @@ Los siguientes problemas permiten jugar con la entrada estándar de los programa
 
 ### 2.2 Problemas
 
-Por hacer...
+1. Escriba un programa que lea un número entero desde su entrada estándar, le sume otro número aleatorio (por ejemplo, -16) y muestre el resultado en la salida estándar.
+
+    Ejemplo:
+
+    * **Entrada estándar:** se le solicitó un número X al usuario, y este último introdujo 10.
+
+    * **Salida:** *Buenas noches. El resultado de sumar 10 + (-16) = -6*
+
+    * **Razonamiento:** en esta modalidad, se suele esperar a que el usuario ingrese los datos de entrada *durante* la ejecución del programa. El usuario introdujo 10. Luego de leer dichos datos, computamos los datos (sumar -16 a la entrada del usuario) y ponemos los resultados en la salida estándar.
+
+2. Escriba un programa que lea un número entero *x* desde su primer argumento y otro número entero *y* desde la entrada estándar, y muestre el resultado de las siguientes operaciones en la salida estándar:
+
+    * x + y - 5
+    * y - x * y
+    * y \* y \* x
+    * -x + (Resto de dividir y entre -4)
+
+    Ejemplo:
+
+    * **Primer argumento que ingresó el usuario:** -7 (x = -7)
+
+    * **Número que introdujo usuario mediante entrada estándar:** 10 (y = 10)
+
+    * **Salida:**
+
+        * (-7) + (10) - 5 = **-2**
+
+        * (10) - (-7) * (10) = **80**
+
+        * (10) \* (10) \* (-7) = **-700**
+
+        * -(-7) + (Resto de dividir (10) entre -4) = **5**
+
+3. Realice una aplicación que lea un número entero *x* y algún texto desde su entrada estándar, saque el resto del número leído entre 8 (x módulo 8), y muestre el resultado de concatenar (unir) ambos, el número y el texto, mediante un espacio.
+
+    Por ejemplo:
+
+    * **Entrada:**
+
+        * 15
+
+        * animales salvajes
+
+    * **Salida:** 7 animales salvajes
+
+    * **Razonamiento:** *15* y *animales salvajes* es lo que introdujo el usuario. A ese 15 se le saca el módulo entre 8, lo que resulta en 7 y dicho resultado se concatena con *animales salvajes*, dejando un espacio entre el 7 y el texto.
+
+4. Programe una aplicación que reciba, primeramente, un caracter y luego solicite al usuario dos oraciones. Luego, la aplicación deberá mostrar ambas oraciones pero rodeadas por el caracter que escogió el usuario.
+
+    Por ejemplo:
+
+    * **Entrada:**
+
+        * **El caracter:** &
+
+        * **Oración 1:** El agua deberia ser transparente cuando no esta sucia
+
+        * **Oración 2:** mantequisha
+
+    * **Salida:**
+
+        * &El agua deberia ser transparente cuando no esta sucia&
+
+        * &mantequisha&
+
+    * **Nota:** es recomendable poner cada oración en una línea diferente.
+
+5. Escriba un aplicativo que lea dos oraciones desde sus primeros dos argumentos, así como otra pero desde la entrada estándar y escriba, en la salida estándar, la segunda oración, la tercera oración y, finalmente, la primera oración, en ese mismo orden y separadas por el caracter \t.
+
+    Ejemplo:
+
+    * **Entrada:**
+
+        * **Argumento 1:** asterisco
+
+        * **Argumento 2:** Por favor, cierre la puerta al salir.
+
+        * **Entrada estándar 1:** de nada
+
+    * **Salida:** Por favor, cierre la puerta al salir.&emsp;de nada&emsp;asterisco
+
+    * **Nota:** así como \n, el caracter \t (TAB) tiene un efecto especial en algunas terminales de comandos. Dichos caracteres son sustituidos por espacios en blanco, cuyo tamaño el sistema operativo decide. Es el equivalente a presionar la tecla TAB en procesadores de palabra como Word.
