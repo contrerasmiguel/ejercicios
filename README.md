@@ -204,3 +204,147 @@ Los siguientes problemas permiten jugar con la entrada estándar de los programa
     * **Salida:** Por favor, cierre la puerta al salir.&emsp;de nada&emsp;asterisco
 
     * **Nota:** así como \n, el caracter \t (TAB) tiene un efecto especial en algunas terminales de comandos. Dichos caracteres son sustituidos por espacios en blanco, cuyo tamaño el sistema operativo decide. Es el equivalente a presionar la tecla TAB en procesadores de palabra como Word.
+
+6. Escriba un programa que lea dos caracteres *c1* y *c2*, además de dos números enteros *i1* e *i2*, todos desde la entrada estándar y por separado. Luego, mostrar dichos valores usando la siguiente fórmula:
+
+    i2c1c2c2i2i1
+
+    **Nota:** sustituir c1, c2, i1 e i2 por los valores leídos.
+
+    Por ejemplo:
+
+    * **Entrada:**
+
+        * E
+
+        * n
+
+        * 58
+
+        * -9
+
+    * **Salida:** -9Enn-958
+
+7. Escriba una aplicación que reciba dos números enteros *n* y *m* mediante los argumentos de programa y que lea un caracter *c* desde la entrada estándar. En su salida estándar, el aplicativo deberá mostrar lo siguiente:
+
+    1. El caracter *c* tal y como fue leído desde la entrada
+
+    2. El caracter *c* pero en mayúscula
+
+    3. El caracter *c* pero en minúscula
+
+    4. El caracter que esté *n* caracteres después del caracter *c*
+
+    5. El caracter que esté *m* caracteres antes del caracter *c*
+
+    Ejemplo:
+
+    * **Entrada por argumentos:** 2 4
+
+        En ese caso, n = 2 y m = 4.
+
+    * **Entrada estándar:** f
+
+    * **Salida:**
+
+        1. f
+
+        2. F
+
+        3. f
+
+        4. h
+
+        5. b
+
+    * **Razonamiento:**
+
+        1. *f* es el caracter tal y como se leyó desde la entrada estándar.
+
+        2. *F* es el caracter que se leyó pero en mayúscula.
+
+        3. *f* es el caracter que se leyó pero en minúscula. Nótese que transformar un caracter que ya está en minúscula resulta en el mismo caracter. De cualquier forma, siempre se debe aplicar la transformación.
+
+        4. *h*. Como *n = 2*, se calculó el tercer caracter después de *f*, que corresponde a *i*.
+
+            | f | g | *h* | i | j |
+            |---|---|---|---|---|
+            | 0 | 1 | **2** | 3 | 4 |
+
+        5. *b*. Como *m = 4*, se calculó el cuarto caracter que precede a *f*, que corresponde a *b*.
+
+            | a | *b* | c | d | e | f |
+            |---|---|---|---|---|---|
+            | 5 | **4** | 3 | 2 | 1 | 0 |
+
+    * **Pista:** para conseguir el caracter antes o después de otro caracter *c*, se le puede sumar o restar, en el código, a ese *c* la cantidad de posiciones en la que se desee desplazar. Por ejemplo, para el caracter *H*, tres posiciones atrás es *H - 3 = E*. Para ese mismo caracter, una posición hacia adelante es *H + 2 = J*.
+
+8. Realice una aplicación que lea una oración desde su entrada estándar y la muestre en la salida dos veces: la primera con el segundo caracter de la oración en mayúscula y la segunda línea con el tercer caracter de la oración en minúscula.
+
+    Por ejemplo:
+
+    * **Entrada:** tres tristes tigres comieron trigo en un trigal
+
+    * **Salida:**
+
+        * t**R**es tristes tigres comieron trigo en un trigal
+
+        * tr**e**s tristes tigres comieron trigo en un trigal
+
+     Segundo ejemplo:
+
+    * **Entrada:** BaNDEjas
+
+    * **Salida:**
+
+        * B**A**NDEjas
+
+        * BA**n**DEjas
+
+9. Escriba un programa que reciba una oración mediante su primer argumento y un número entero *n* a través de su entrada estándar, para que luego muestre la oración leída pero con el caracter en la posición *n* transformado en un espacio en blanco.
+
+    Ejemplo:
+
+    * **Entrada por argumentos:** "salidA"
+
+    * **Entrada estándar:** 2
+
+    * **Salida:** sa idA
+
+    * **Razonamiento:** como *n = 2*, se modifica el caracter en la posición 2 de la oración.
+
+        | s | a | *l* | i | d | A |
+        |---|---|---|---|---|---|
+        | 0 | 1 | **2** | 3 | 4 | 5 |
+
+        **Resultado:**
+
+        | s | a |  | i | d | A |
+        |---|---|---|---|---|---|
+        | 0 | 1 | **2** | 3 | 4 | 5 |
+
+    * **Consejo:** investigar como modificar un caracter en un valor de tipo char*. Los char* son *cadenas de caracteres* (character *strings*).
+
+10. Realice un programa que reciba un número entero *n* a través de su primer argumento y una oración mediante su entrada estándar, para que luego muestre la oración leída pero con el caracter en la posición *n* transformado en un espacio en un asterisco.
+
+    Ejemplo:
+
+    * **Entrada por argumentos:** "la par"
+
+    * **Entrada estándar:** 2
+
+    * **Salida:** la*par
+
+    * **Razonamiento:** como *n = 2*, se modifica el caracter en la posición 2 de la oración.
+
+        | l | a |   | p | a | r |
+        |---|---|---|---|---|---|
+        | 0 | 1 | **2** | 3 | 4 | 5 |
+
+        **Resultado:**
+
+        | l | a | * | p | a | r |
+        |---|---|---|---|---|---|
+        | 0 | 1 | **2** | 3 | 4 | 5 |
+
+    * **Consejo:** investigar las maneras de leer una cadena de caracteres mediante las funciones de entrada estándar. Luego buscar cómo modificar un caracter específico de dicha cadena.
