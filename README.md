@@ -153,7 +153,7 @@ Los siguientes problemas permiten jugar con la entrada estándar de los programa
 
         * (10) \* (10) \* (-7) = **-700**
 
-        * -(-7) + (Resto de dividir (10) entre -4) = **5**
+        * -(-7) + (Resto de dividir (10) entre -4) = **9**
 
 3. Realice una aplicación que lea un número entero *x* y algún texto desde su entrada estándar, saque el resto del número leído entre 8 (x módulo 8), y muestre el resultado de concatenar (unir) ambos, el número y el texto, mediante un espacio.
 
