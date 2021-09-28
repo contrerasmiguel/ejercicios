@@ -155,7 +155,7 @@ Los siguientes problemas permiten jugar con la entrada estándar de los programa
 
         * -(-7) + (Resto de dividir (10) entre -4) = **9**
 
-3. Realice una aplicación que lea un número entero *x* y algún texto desde su entrada estándar, saque el resto del número leído entre 8 (x módulo 8), y muestre el resultado de concatenar (unir) ambos, el número y el texto, mediante un espacio.
+3. Realice una aplicación que lea un número entero *x* y algún texto desde su entrada estándar, saque el resto del número leído entre 8 (x % 8), y muestre el resultado de concatenar (unir) ambos, el número y el texto, mediante un espacio.
 
     Por ejemplo:
 
@@ -167,7 +167,7 @@ Los siguientes problemas permiten jugar con la entrada estándar de los programa
 
     * **Salida:** 7 animales salvajes
 
-    * **Razonamiento:** *15* y *animales salvajes* es lo que introdujo el usuario. A ese 15 se le saca el módulo entre 8, lo que resulta en 7 y dicho resultado se concatena con *animales salvajes*, dejando un espacio entre el 7 y el texto.
+    * **Razonamiento:** *15* y *animales salvajes* es lo que introdujo el usuario. A ese 15 se le saca el resto entre 8, lo que resulta en 7 y dicho resultado se concatena con *animales salvajes*, dejando un espacio entre el 7 y el texto.
 
 4. Programe una aplicación que reciba, primeramente, un caracter y luego solicite al usuario dos oraciones. Luego, la aplicación deberá mostrar ambas oraciones pero rodeadas por el caracter que escogió el usuario.
 
