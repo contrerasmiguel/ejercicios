@@ -265,7 +265,7 @@ Los siguientes problemas permiten jugar con la entrada estándar de los programa
 
         3. *f* es el caracter que se leyó pero en minúscula. Nótese que transformar un caracter que ya está en minúscula resulta en el mismo caracter. De cualquier forma, siempre se debe aplicar la transformación.
 
-        4. *h*. Como *n = 2*, se calculó el tercer caracter después de *f*, que corresponde a *i*.
+        4. *h*. Como *n = 2*, se calculó el segundo caracter después de *f*, que corresponde a *h*.
 
             | f | g | *h* | i | j |
             |---|---|---|---|---|
@@ -277,7 +277,7 @@ Los siguientes problemas permiten jugar con la entrada estándar de los programa
             |---|---|---|---|---|---|
             | 5 | **4** | 3 | 2 | 1 | 0 |
 
-    * **Pista:** para conseguir el caracter antes o después de otro caracter *c*, se le puede sumar o restar, en el código, a ese *c* la cantidad de posiciones en la que se desee desplazar. Por ejemplo, para el caracter *H*, tres posiciones atrás es *H - 3 = E*. Para ese mismo caracter, una posición hacia adelante es *H + 2 = J*.
+    * **Pista:** para conseguir el caracter antes o después de otro caracter *c*, se le puede sumar o restar, en el código, a ese *c* la cantidad de posiciones en la que se desee desplazar. Por ejemplo, para el caracter *H*, tres posiciones atrás es *H - 3 = E*. Para ese mismo caracter, dos posiciones hacia adelante es *H + 2 = J*.
 
 8. Realice una aplicación que lea una oración desde su entrada estándar y la muestre en la salida dos veces: la primera con el segundo caracter de la oración en mayúscula y la segunda línea con el tercer caracter de la oración en minúscula.
 
@@ -299,7 +299,7 @@ Los siguientes problemas permiten jugar con la entrada estándar de los programa
 
         * B**A**NDEjas
 
-        * BA**n**DEjas
+        * Ba**n**DEjas
 
 9. Escriba un programa que reciba una oración mediante su primer argumento y un número entero *n* a través de su entrada estándar, para que luego muestre la oración leída pero con el caracter en la posición *n* transformado en un espacio en blanco.
 
