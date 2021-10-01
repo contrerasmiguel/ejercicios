@@ -325,7 +325,7 @@ Los siguientes problemas permiten jugar con la entrada estándar de los programa
 
     * **Consejo:** investigar como modificar un caracter en un valor de tipo char*. Los char* son *cadenas de caracteres* (character *strings*).
 
-10. Realice un programa que reciba un número entero *n* a través de su primer argumento y una oración mediante su entrada estándar, para que luego muestre la oración leída pero con el caracter en la posición *n* transformado en un espacio en un asterisco.
+10. Realice un programa que reciba un número entero *n* a través de su primer argumento y una oración mediante su entrada estándar, para que luego muestre la oración leída pero con el caracter en la posición *n* transformado en un asterisco.
 
     Ejemplo:
 
