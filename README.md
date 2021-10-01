@@ -329,9 +329,9 @@ Los siguientes problemas permiten jugar con la entrada estándar de los programa
 
     Ejemplo:
 
-    * **Entrada por argumentos:** "la par"
+    * **Entrada por argumentos:** 2
 
-    * **Entrada estándar:** 2
+    * **Entrada estándar:** "la par"
 
     * **Salida:** la*par
 
