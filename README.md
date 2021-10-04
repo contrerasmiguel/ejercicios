@@ -488,15 +488,13 @@ A partir de este punto, cuando no se especifique el tipo de entrada, el lector p
 
     * **Entrada:**
 
-        * **s:** la puerta HA cerrado
+        * **s:** la p**u**erta HA cerrado
 
         * **n:** 5
 
         * **m:** 13
 
-    * **Salida:**
-
-        * **s:** la p erta HAucerrado
+    * **Salida:** la p erta HA**u**cerrado
 
     * **Nota:** el primer caracter de la oración corresponde a *n = 1*.
 
@@ -536,25 +534,23 @@ Las operaciones con booleanos son aquellas en las que intervienen valores de tip
 
 [ [Índice](#tabla-de-contenidos) ]
 
-* **Booleanos:** los valores booleanos son aquellos que están en el rango [*true*, *false*], es decir, que solo pueden ser *verdadero* a *falso*. Dichos valores pueden aparecer como resultado de otras operaciones e invocaciones. Por ejemplo:
+* **Booleanos:** los valores booleanos son aquellos que están en el rango [*true*, *false*], es decir, que solo pueden ser *verdadero* a *falso*. Dichos valores pueden aparecer como resultado de otras operaciones. Por ejemplo:
 
-  * 1 < 2 => **true**
+  * 1 < 2 -> **true**
 
-  * 1 > 2 => **false**
+  * 1 > 2 -> **false**
 
-  * 2 >= 1 => **true**
+  * 2 >= 1 -> **true**
 
-  * 2 = 1 => **false** (en algunos lenguajes como C++, se utiliza el == en vez de =)
-
-  También pueden surgir como salida de *invocaciones a funciones* de tipo booleano. Por ejemplo, la función `isupper` de C++ devuelte *1* si el caracter está en mayúscula y, de lo contrario, devuelve *0*. En algunos lenguajes, estos dos números son equivalentes a *true* y *false* respectivamente. De manera similar, algunos lenguajes como C y C++ consideran cualquier valor diferente de *cero* (0) como *true* y *cero* como *false*.
+  * 2 = 1 -> **false** (en algunos lenguajes como C++, se utiliza el == en vez de = como operador de igualdad)
 
 * **Operadores booleanos:** estos son aquellos que operan sobre valores de tipo booleano, entre ellos *and*, *or* y *not*. Los siguientes serían ejemplo de su uso:
 
-    true **and** false = **false**
+    true **and** false -> **false**
 
-    **not** false = **true**
+    **not** false -> **true**
 
-    (5 <= 1) **or** **not** false = **true**
+    (5 <= 1) **or** **not** false -> **true**
 
 ### 4.2 Problemas
 
