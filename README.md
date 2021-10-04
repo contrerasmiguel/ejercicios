@@ -12,6 +12,12 @@ Se alienta alienta al lector a compartir sus soluciones con el autor del problem
 * [2 Entrada y salida II](#2-entrada-y-salida-ii)
   * [2.1 Conceptos básicos](#21-conceptos-básicos)
   * [2.2 Problemas](#22-problemas)
+* [3 Intercambio de valores](#3-intercambio-de-valores)
+  * [3.1 Conceptos básicos](#31-conceptos-básicos)
+  * [3.2 Problemas](#32-problemas)
+* [4 Operaciones con booleanos](#4-operaciones-con-booleanos)
+  * [4.1 Conceptos básicos](#41-conceptos-básicos)
+  * [4.2 Problemas](#42-problemas)
 
 ## 1 Entrada y salida I
 
@@ -348,3 +354,210 @@ Los siguientes problemas permiten jugar con la entrada estándar de los programa
         | 0 | 1 | **2** | 3 | 4 | 5 |
 
     * **Consejo:** investigar las maneras de leer una cadena de caracteres mediante las funciones de entrada estándar. Luego buscar cómo modificar un caracter específico de dicha cadena.
+
+## 3 Intercambio de valores
+
+[ [Índice](#tabla-de-contenidos) ]
+
+Muchos problemas requieren el intercambio de valores entre dos o más variables, por lo que en los siguientes ejercicios buscamos familiarizarnos con las técnicas que nos permiten realizar dicha tarea sin perder datos.
+
+### 3.1 Conceptos básicos
+
+[ [Índice](#tabla-de-contenidos) ]
+
+* **Intercambio:** supongamos que tenemos las variables *a = 2* y *b = -9*. Un intercambio entre ambas variables significaría que *a* pasa a valer lo que tenía *b* y viceversa, quedando *a = -9* y *b = 2*.
+
+    Mentalmente este cambio luce trivial, pero cuando se analiza el procedimiento paso por paso, se puede notar que es posible perder el valor de una de las variables en el camino:
+
+    0. **a <- 2; b <- (-9)** (valores iniciales)
+
+    1. **a <- b** (primer paso del intercambio)
+
+    2. **b <- a** (último paso del intercambio)
+
+    Asumiento que esos son los pasos correctos, las variables tendrían los siguientes valores durante el procedimiento.
+
+    | PASO | a | b |
+    |---|---|---|
+    | 0 | 2 | -9 |
+    | 1 | -9 | -9 |
+    | 2 | -9 | -9 |
+
+    Se puede observar que en el paso número 2, a la variable *b* se le asigna (<-) el valor de *a*, pero *a* ya no tiene su valor inicial por lo que *b* obtiene un valor incorrecto. Incluso si se invierte el orden del procedimiento, se manifestaría el mismo problema:
+
+    0. a <- 2; b <- (-9)
+
+    1. b <- a
+
+    2. a <- b
+
+    | PASO | a | b |
+    |---|---|---|
+    | 0 | 2 | -9 |
+    | 1 | 2 | 2 |
+    | 2 | 2 | 2 |
+
+    El problema es que se pierde el valor inicial de la variable que se modifica en el primer paso del procedimiento. Para lograr correctamente el intercambio, se hace necesario respaldar el valor de tal variable antes de modificarla, como se muestra a continuación:
+
+    0. a <- 2; b <- (-9)
+
+    1. t <- b
+
+    2. b <- a
+
+    3. a <- t
+
+    | PASO | a | b | t |
+    |---|---|---|---|
+    | 0 | 2 | -9 | ? |
+    | 1 | 2 | -9 | -9 |
+    | 2 | 2 | 2 | -9 |
+    | 3 | -9 | 2 | -9 |
+
+    La variable *t* almacena el valor de la primera variable a modificar, cuestión de luego poder asignárselo a la segunda variable del intercambio. A este tipo de variables les llamamos *auxiliares*.
+
+### 3.2 Problemas
+
+[ [Índice](#tabla-de-contenidos) ]
+
+A partir de este punto, cuando no se especifique el tipo de entrada, el lector podrá escoger la que quiera en la solución. Sin embargo, se recomienda seguir practicando ambos tipos de entrada, con el propósito de lograr familiaridad con el lenguaje que está estudiando. Los ejercicios son los siguientes:
+
+1. Escriba un programa que reciba dos números enteros *a* y *b*, para luego intercambiarlos internamente en el código, es decir, *a* pasa a tener el valor de *b* y *b* pasa a tener el valor que tenía *a* inicialmente. Finalmente, mostrar los valores finales de ambas variables.
+
+2. Realice una aplicación que lea tres caracteres por separado, *c1*, *c2* y *c3*, para luego intercambiar *c1* con *c3*, seguido de *c2* y *c1*. Finalmente, mostrar los valores de *c1*, *c2* y *c3* mediante la salida estándar.
+
+    Ejemplo:
+
+    * **Entrada:**
+
+        * **c1:** M
+
+        * **c2:** x
+
+        * **c3:** b
+
+    * **Salida:**
+
+        * **c1:** x
+
+        * **c2:** b
+
+        * **c3:** M
+
+3. Realice un programa que lea dos oraciones *s1* y *s2*, así como un número entero *n*. El programa deberá intercambiar, el caracter *n* entre las oraciones, para luego mostrarlas. Nótese que para este problema, el primer caracter de la oración es *n = 1* y no *n = 0*.
+
+    Por ejemplo:
+
+    * **Entrada:**
+
+        * **s1:** Mario lava la batea
+
+        * **s2:** El mondongo es dulce y grasoso
+
+        * **n:** 4
+
+    * **Salida:**
+
+        * **s1:** Marmo lava la batea
+
+        * **s2:** El iondongo es dulce y grasoso
+
+    Otro ejemplo:
+
+    * **Entrada:**
+
+        * **s1:** Erasmo me cortó el pelo
+
+        * **s2:** Árbol de fruta
+
+        * **n:** 1
+
+    * **Salida:**
+
+        * **s1:** Árasmo me cortó el pelo
+
+        * **s2:** Erbol de fruta
+
+    * **Nota:** el usuario en ningún caso podrá ingresar un *n < 1*, ya que no hay ningún caracter antes del 1.
+
+    * **Consejo:** como los índices en algunos lenguajes empiezan por cero (0), se le puede restar uno (1) a *n* para encontrar el índice correcto.
+
+4. Realice un programa que reciba una oración *s* y dos números enteros, *n* y *m*. El programa deberá intercambiar los caracteres *n* y *m* de la oración.
+
+    Ejemplo:
+
+    * **Entrada:**
+
+        * **s:** la puerta HA cerrado
+
+        * **n:** 5
+
+        * **m:** 13
+
+    * **Salida:**
+
+        * **s:** la p erta HAucerrado
+
+    * **Nota:** el primer caracter de la oración corresponde a *n = 1*.
+
+5. Realice un programa que lea dos oraciones *s1* y *s2*, así como dos números enteros *n1* y *n2*, para luego hacer los siguientes cambios:
+
+    1. Intercambio entre *n1* de *s1* y *n2* de *s2*
+
+    2. Intercambio entre *n2* de *s1* y *n1* de *s2*
+
+    Escribir, en la salida, las dos oraciones que resultaron después de los intercambios.
+
+    Por ejemplo:
+
+    * **Entrada:**
+
+        * **s1:** **E**ras**m**o me cortó el pelo
+
+        * **s2:** **Á**rbo**l** de fruta
+
+        * **n1:** 1
+
+        * **n2:** 5
+
+    * **Salida:**
+
+        * **s1:** **l**ras**Á**o me cortó el pelo
+
+        * **s2:** **m**rbo**E** de fruta
+
+## 4 Operaciones con booleanos
+
+[ [Índice](#tabla-de-contenidos) ]
+
+Las operaciones con booleanos son aquellas en las que intervienen valores de tipo booleano, ya sea como operandos o como resultado de las operaciones. Estas son fundamentales para la ramificación del flujo de ejecución del problema; en otras palabras, el programa hará una cosa u otra, dependiendo de las condiciones planteadas en el código.
+
+### 4.1 Conceptos básicos
+
+[ [Índice](#tabla-de-contenidos) ]
+
+* **Booleanos:** los valores booleanos son aquellos que están en el rango [*true*, *false*], es decir, que solo pueden ser *verdadero* a *falso*. Dichos valores pueden aparecer como resultado de otras operaciones e invocaciones. Por ejemplo:
+
+  * 1 < 2 => **true**
+
+  * 1 > 2 => **false**
+
+  * 2 >= 1 => **true**
+
+  * 2 = 1 => **false** (en algunos lenguajes como C++, se utiliza el == en vez de =)
+
+  También pueden surgir como salida de *invocaciones a funciones* de tipo booleano. Por ejemplo, la función `isupper` de C++ devuelte *1* si el caracter está en mayúscula y, de lo contrario, devuelve *0*. En algunos lenguajes, estos dos números son equivalentes a *true* y *false* respectivamente. De manera similar, algunos lenguajes como C y C++ consideran cualquier valor diferente de *cero* (0) como *true* y *cero* como *false*.
+
+* **Operadores booleanos:** estos son aquellos que operan sobre valores de tipo booleano, entre ellos *and*, *or* y *not*. Los siguientes serían ejemplo de su uso:
+
+    true **and** false = **false**
+
+    **not** false = **true**
+
+    (5 <= 1) **or** **not** false = **true**
+
+### 4.2 Problemas
+
+[ [Índice](#tabla-de-contenidos) ]
+
+...
