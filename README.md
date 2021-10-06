@@ -556,4 +556,38 @@ Las operaciones con booleanos son aquellas en las que intervienen valores de tip
 
 [ [Índice](#tabla-de-contenidos) ]
 
-...
+1. Escriba un programa que reciba dos números enteros, *a* y *b* y muestre el resultado de las siguientes operaciones lógicas.
+
+    * a and b
+
+    * a or b
+
+    * not b
+
+    * not b and a
+
+    * a > b or b
+
+    * b not equal a (a != b)
+
+    Ejemplo:
+
+    * **Entrada:**
+
+        * **a:** 7
+
+        * **b:** 0
+
+    * **Salida:**
+
+        * 7 and 0 => 0 (false)
+
+        * 7 or 0 => 1 (true)
+
+        * not 0 => 1 (true)
+
+        * not 7 and 0 => 0 (false)
+
+        * 7 > 0 or 0 => 1 (true)
+
+        * 0 not equal 7 => 1 (true)
