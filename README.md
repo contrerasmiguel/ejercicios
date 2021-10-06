@@ -586,7 +586,7 @@ Las operaciones con booleanos son aquellas en las que intervienen valores de tip
 
         * not 0 => 1 (true)
 
-        * not 7 and 0 => 0 (false)
+        * not 0 and 7 => 1 (true)
 
         * 7 > 0 or 0 => 1 (true)
 
