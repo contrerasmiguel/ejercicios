@@ -580,14 +580,93 @@ Las operaciones con booleanos son aquellas en las que intervienen valores de tip
 
     * **Salida:**
 
-        * 7 and 0 => 0 (false)
+        * 7 and 0 -> 0 (false)
 
-        * 7 or 0 => 1 (true)
+        * 7 or 0 -> 1 (true)
 
-        * not 0 => 1 (true)
+        * not 0 -> 1 (true)
 
-        * not 0 and 7 => 1 (true)
+        * not 0 and 7 -> 1 (true)
 
-        * 7 > 0 or 0 => 1 (true)
+        * 7 > 0 or 0 -> 1 (true)
 
-        * 0 not equal 7 => 1 (true)
+        * 0 not equal 7 -> 1 (true)
+
+2. En este ejercicio escribiremos un validador interactivo. La idea general es que el usuario responda una serie de preguntas, y el programa le indique si sus respuestas son correctas. Para ello, primeramente, el usuario debe introducir tres números enteros *a*, *b* y *c*. Luego el programa debe realizar las siguientes preguntas:
+
+    1. **a** and **b** or **c**
+
+    2. **b** > **c** equals not **a**
+
+    3. **a** equals **c** || **a** >= **b** && not **c**
+
+    4. **c** xor **b**
+
+    Luego de cada pregunta, el programa debe esperar que el usuario introduzca la respuesta, para luego decirle si fue correcta (1) o incorrecta (0). En resumen, el algoritmo del programa es el siguiente:
+
+    1. Recibir valores de *a*, *b* y *c*. Se recomienda usar argumentos de programa para facilitar las pruebas.
+
+    2. Mostrar primera pregunta.
+
+    3. Leer respuesta de primera pregunta.
+
+    4. Indicarle al usuario la correctitud de su respuesta. **1** es correcto y **0** es incorrecto.
+
+    5. Mostrar segunda pregunta.
+
+    6. Leer respuesta de segunda pregunta.
+
+    7. Indicarle al usuario la correctitud de su respuesta. **1** es correcto y **0** es incorrecto.
+
+    8. Repetir el procedimiento con las últimas dos preguntas.
+
+    Ejemplo:
+
+    * **Entrada (valores iniciales):**
+
+        * **a:** 9
+
+        * **b:** -5
+
+        * **c:** 0
+
+    * **Flujo del programa:**
+
+        1. **Salida:** "Introduzca el resultado de: **9 and -5 or 0**"
+
+        2. **Entrada:** 1
+
+        3. **Salida:** "Fue correcta su respuesta? **1**"
+
+        4. **Salida:** "Introduzca el resultado de: **-5 > 0 equals not 9**"
+
+        5. **Entrada:** 0
+
+        6. **Salida:** "Fue correcta su respuesta? **0**"
+
+        7. **Salida:** "Introduzca el resultado de: **9 equals 0 || 9 >= -5 && not 0**"
+
+        8. **Entrada:** 1
+
+        9. **Salida:** "Fue correcta su respuesta? **1**"
+
+        10. **Salida:** "Introduzca el resultado de: **0 xor -5**"
+
+        11. **Entrada:** 0
+
+        12. **Salida:** "Fue correcta su respuesta? **0**"
+
+    * **Explicación:** primero se le pregunta al usuario mediante la salida estándar. Luego se lee la respuesta del usuario mediante la entrada estándar y, finalmente, se le indica al usuario la validez de su respuesta mediante la salida estándar. Este proceso de tres pasos se repite unas cuatro veces.
+
+    * **Consejo:** así como se pueden comparar operandos, es posible comparar la respuesta correcta del ejercicio con la respuesta del usuario. Por ejemplo:
+
+        ```cpp
+        int resp_correcta = 5 + 1 * 4;
+        int resp_usuario;
+
+        cin >> resp_usuario;
+
+        bool resultado = resp_correcta == resp_usuario;
+        ```
+
+    En este ejemplo se puede observar que se debe usar el operador de igualdad (== en C++) para comparar una respuesta con otra. Quedaría por parte del usuario encontrar la **resp_correcta** para cada pregunta, compararla con lo que introdujo el usuario (**resp_usuario**) y mostrar el **resultado** en la salida estándar.
