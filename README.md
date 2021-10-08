@@ -526,7 +526,7 @@ A partir de este punto, cuando no se especifique el tipo de entrada, el lector p
 
 6. Dominguito tiene un corral con 4 gallinas que cada vez tienen más crías, por lo que se le hace imposible mantener su patio limpio. Para lidiar con esta situación y conociendo el peso de cada gallina, decidió que se comerá a la más gorda en una sopa, mientras que apartará la más flaca a un corral aparte, para que ponga huevos tranquilamente.
 
-    El problema es que él, incluso teniendo los pesos, no sabe cómo determinar cuál es el menor y cuál es el mayor. Por favor, haz un programa que ayude a Dominguito a encontrar la respuesta.
+    El problema es que él, incluso teniendo los pesos, no sabe cómo determinar cuál es el menor y cuál es el mayor. Por favor, haga un programa que ayude a Dominguito a encontrar la respuesta.
 
 ## 4 Operaciones con booleanos
 
