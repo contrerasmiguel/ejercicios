@@ -18,7 +18,7 @@ Se alienta alienta al lector a compartir sus soluciones con el autor del problem
 * [4 Operaciones con booleanos](#4-operaciones-con-booleanos)
   * [4.1 Conceptos básicos](#41-conceptos-básicos)
   * [4.2 Problemas](#42-problemas)
-* [5 Condicionales](#5-condicionales)
+* [5 Condiciones](#5-condiciones)
   * [5.1 Conceptos básicos](#51-conceptos-básicos)
   * [5.2 Problemas](#52-problemas)
 
@@ -797,7 +797,7 @@ Las operaciones con booleanos son aquellas en las que intervienen valores de tip
 
     En este ejemplo se puede observar que se debe usar el operador de igualdad (== en C++) para comparar una respuesta con otra. Quedaría por parte del usuario encontrar la **resp_correcta** para cada pregunta, compararla con lo que introdujo el usuario (**resp_usuario**) y mostrar el **resultado** en la salida estándar.
 
-## 5 Condicionales
+## 5 Condiciones
 
 [ [Índice](#tabla-de-contenidos) ]
 
