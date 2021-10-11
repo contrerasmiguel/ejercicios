@@ -18,6 +18,9 @@ Se alienta alienta al lector a compartir sus soluciones con el autor del problem
 * [4 Operaciones con booleanos](#4-operaciones-con-booleanos)
   * [4.1 Conceptos básicos](#41-conceptos-básicos)
   * [4.2 Problemas](#42-problemas)
+* [5 Condicionales](#5-condicionales)
+  * [5.1 Conceptos básicos](#51-conceptos-básicos)
+  * [5.2 Problemas](#52-problemas)
 
 ## 1 Entrada y salida I
 
@@ -793,3 +796,143 @@ Las operaciones con booleanos son aquellas en las que intervienen valores de tip
         ```
 
     En este ejemplo se puede observar que se debe usar el operador de igualdad (== en C++) para comparar una respuesta con otra. Quedaría por parte del usuario encontrar la **resp_correcta** para cada pregunta, compararla con lo que introdujo el usuario (**resp_usuario**) y mostrar el **resultado** en la salida estándar.
+
+## 5 Condicionales
+
+[ [Índice](#tabla-de-contenidos) ]
+
+Las sentencias y expresiones condicionales permiten expresar multiples caminos de ejecución en un mismo programa. Esto significa que el camino de ejecución a seleccionar por el programa dependerá de las condiciones que se presenten en el mismo.
+
+### 5.1 Conceptos básicos
+
+[ [Índice](#tabla-de-contenidos) ]
+
+* **if-else**: las sentencias condicionales se suelen expresar mediante las palabras *if* y *else*, cada uno seguido de un bloque de código que se desea ejecutar.
+
+    En C++ la sintaxis es la siguiente:
+
+    ```cpp
+    if (/* AQUÍ CONDICIÓN (BOOLEANO) */)
+    {
+        // AQUÍ LO QUE DEBE SUCEDER SI LA CONDICIÓN ES CIERTA
+    }
+    else
+    {
+        // AQUÍ LO QUE DEBE SUCEDER SI LA CONDICIÓN ES FALSA
+    }
+    ```
+
+    En el siguiente ejemplo, el programa mostraría *CAMINO 1*:
+
+    ```cpp
+    if (true)
+    {
+        cout << "CAMINO 1" << endl;
+    }
+    else
+    {
+        cout << "NUNCA PASARÉ POR AQUÍ" << endl;
+    }
+    ```
+
+    ... mientras que en el siguiente ejemplo, el programa mostraría *CAMINO 2*:
+
+    ```cpp
+    if (false)
+    {
+        cout << "NUNCA PASARÉ POR AQUÍ" << endl;
+    }
+    else
+    {
+        cout << "CAMINO 2" << endl;
+    }
+    ```
+
+    En este otro ejemplo, la condición que se evalúa es *a != b && c || b*. Como el resultado es *false*, se ejecuta el código del bloque del *else*.
+
+    ```cpp
+    bool a = true;
+    bool b = false;
+    bool c = false;
+
+    if (a != b && c || b)
+    {
+        cout << "NUNCA PASARÉ POR AQUÍ" << endl;
+    }
+    else
+    {
+        cout << "YO SOY EL MENSAJE QUE SE MOSTRARÁ" << endl;
+    }
+    ```
+
+### 5.2 Problemas
+
+[ [Índice](#tabla-de-contenidos) ]
+
+1. Dominguito no quedó conforme con el programa que recibió la última vez, ya que varias de sus gallinas **pueden** pesar lo mismo, así que no sabría cual escoger si solo le dicen los pesos como respuesta. Necesita que le digan cuál de las cuatro gallinas matar y cuál encerrar en el corral apartado. Para ello, podríamos considerar el siguiente ejemplo:
+
+    * **Entrada:**
+
+        * **Gallina nro. 1:** 10
+
+        * **Gallina nro. 2:** 15
+
+        * **Gallina nro. 3:** 9
+
+        * **Gallina nro. 4:** 15
+
+    * **Salida:** debe cocinar a la gallina nro. 4 y encerrar la nro. 3.
+
+    * **Salida (alternativa):** debe cocinar a la gallina nro. 2 y encerrar la nro. 3.
+
+    * **Razonamiento:** ambas salidas son válidas ya que la gallina nro. 2 y la nro. 4 tienen el mismo peso, y ambas son las más gordas. La mejora está en que Dominguito ahora sabrá exactamente cual matar y no se confundirá cuando vea que dos de ellas pesan lo mismo.
+
+2. En el mundo de las matemáticas, la división por cero resulta en un número **indefinido**. Eso significa que, por ejemplo, es imposible saber el resultado de la división 5/0. Lo mismo pasa en los programas computacionales; por lo general, dividir un número entre cero genera un *error en tiempo de ejecución*. En tales casos, la tarea del programador es **anticipar** dichos errores, evitando que la aplicación termine de manera inesperada.
+
+    En ese sentido, se necesita un programa que reciba dos números enteros *n* y *m* por parte del usuario, para realizar la división de *n/m* y mostrar el resultado. Sin embargo, en caso de que el usuario introduzca un *m = 0*, el programa deberá indicar, mediante un mensaje de error, que no es posible dividir entre cero.
+
+3. Escriba un programa que reciba el nombre del usuario, su fecha de nacimiento y su color favorito. Seguidamente, la aplicación deberá preguntar por un número entero *n* que corresponderá a una opción. Las opciones deben hacer lo siguiente:
+
+    * **0:** simplemente terminar el programa con una despedida.
+
+    * **1:** mostrar la fecha de nacimiento del usuario.
+
+    * **2:** mostrar el color favorito del usuario.
+
+    * **3:** mostrar el nombre del usuario.
+
+    * **Cualquier otro número:** indicarle al usuario que no existe esa opción.
+
+4. En su trabajo diario, a Manchito le toca cargar bultos, pasar coleto y atender a los clientes en la caja registradora. Sin embargo, ya se cansó de tener que memorizar lo que tiene que hacer, por lo que prefiere que una aplicación le haga unas preguntas sencillas y le diga qué hacer. Las condiciones son las siguientes:
+
+    * Si el piso está sucio, debe preguntar si alguien más tiene el coleto. En caso de que alguien más lo tenga, debe quedarse parado esperando, y si no, debe tomar el coleto e ir a limpiar.
+
+    * Si el piso no está sucio, debe revisar cuántas personas hay en las cajas registradoras. Si hay más de tres, entonces debe quedarse parado esperando a que aparezca algo que hacer. De lo contrario, debe ir a ayudar a las cajas registradoras.
+
+    Ejemplo 1:
+
+    * **Salida:** ¿El piso está sucio?
+
+    * **Entrada:** Sí
+
+    * **Salida:** ¿Alguien más tiene el coleto?
+
+    * **Entrada:** Sí
+
+    * **Salida:** Manchito, quédate ahí esperando a que suelten el coleto.
+
+    Ejemplo 2:
+
+    * **Salida:** ¿El piso está sucio?
+
+    * **Entrada:** No
+
+    * **Salida:** ¿Cuántas personas hay en las cajas registradoras?
+
+    * **Entrada:** 2
+
+    * **Salida:** Manchito, anda a ayudar en las cajas registradoras.
+
+5. César necesita un programa que cambie, por un asterisco, el caracter en la posición *n* de una oración. Él no sabe mucho sobre posiciones, así que puede introduzir una que sea inválida. En tal caso, el programa deberá indicarle a César que se equivocó.
+
+6. Christopher decidió intercambiar dos caracteres en una oración, en las posiciones *n* y *m*, siendo 0 < *n* < *m* <= *l*, en donde *l* es la longitud de la oración. No obstante, él no sabe cómo determinar si un número es menor que otro, así que es capaz de introducir valores inválidos. Ayuda a Christopher a introducir valores válidos para *n* y *m*, además de intercambiar los caracteres.
