@@ -936,3 +936,34 @@ Las sentencias y expresiones condicionales permiten expresar multiples caminos d
 5. César necesita un programa que cambie, por un asterisco, el caracter en la posición *n* de una oración. Él no sabe mucho sobre posiciones, así que puede introduzir una que sea inválida. En tal caso, el programa deberá indicarle a César que se equivocó.
 
 6. Christopher decidió intercambiar dos caracteres en una oración, en las posiciones *n* y *m*, siendo 0 < *n* < *m* <= *l*, en donde *l* es la longitud de la oración. No obstante, él no sabe cómo determinar si un número es menor que otro, así que es capaz de introducir valores inválidos. Ayuda a Christopher a introducir valores válidos para *n* y *m*, además de intercambiar los caracteres.
+
+7. Los números de teléfono son difíciles de recordar. Es por ello que en épocas pasadas se acudía al uso de mnemónicos, es decir, palabras que sustituyen a dichos códigos de operación. En las siguiente tabla, se pueden observar los caracteres disponibles para construir las palabras:
+
+    | Nro. | Caracteres |
+    |---|---|
+    | 1 | 1 |
+    | 2 | ABC |
+    | 3 | DEF |
+    | 4 | GHI |
+    | 5 | JKL |
+    | 6 | MNO |
+    | 7 | PQRS |
+    | 8 | TUV |
+    | 9 | WXYZ |
+    | 0 | 0 |
+
+    Esto significa que podemos escribir el número 2272 usando las combinaciones CASA, BARA ó CARA, entre otras posibilidades.
+
+    Dicho eso, necesitamos una aplicación que verifique si el **número de tres dígitos** que *introdujo* el usuario corresponde al nemónico, **de igual longitud**, que *también introdujo* el usuario. De no corresponder, o de haber algún dato incompleto, el programa deberá mostrarle al usuario en qué se equivocó.
+
+    **Nota:** los números pueden tener ceros a la izquierda. Por ejemplo, 001 es un número valido y su mnemónico correspondiente es 001.
+
+8. Miguelito es de la generación Y, por lo que no sabe nada sobre mnemónicos. Sin embargo, en la universidad le pidieron que *decodifique* un grupo de tres letras. Escriba un programa que cubra dicha necesidad y que muestre mensajes de error descriptivos cuando Miguelito introduzca una palabra inválida.
+
+    Por ejemplo:
+
+    * **Entrada:** F0s
+
+    * **Salida:** 307
+
+    **Razonamiento:** La *F* corresponde al número *3*, el *cero* corresponde al *mismo número* y la *S* corresponde al número *7*.
