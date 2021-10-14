@@ -933,7 +933,7 @@ Las sentencias y expresiones condicionales permiten expresar multiples caminos d
 
     * **Salida:** Manchito, anda a ayudar en las cajas registradoras.
 
-5. César necesita un programa que cambie, por un asterisco, el caracter en la posición *n* de una oración. Él no sabe mucho sobre posiciones, así que puede introduzir una que sea inválida. En tal caso, el programa deberá indicarle a César que se equivocó.
+5. César necesita un programa que cambie, por un asterisco, el caracter en la posición *n* de una oración. Él no sabe mucho sobre posiciones, así que puede introducir una que sea inválida. En tal caso, el programa deberá indicarle a César que se equivocó.
 
 6. Christopher decidió intercambiar dos caracteres en una oración, en las posiciones *n* y *m*, siendo 0 < *n* < *m* <= *l*, en donde *l* es la longitud de la oración. No obstante, él no sabe cómo determinar si un número es menor que otro, así que es capaz de introducir valores inválidos. Ayuda a Christopher a introducir valores válidos para *n* y *m*, además de intercambiar los caracteres.
 
