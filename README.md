@@ -970,7 +970,7 @@ Las sentencias y expresiones condicionales permiten expresar multiples caminos d
 
 9. Sergio estudia en la UDO, por lo que es obligatorio que vea, al menos, Matemática I. En esta materia, le mandaron un ejercicio que no logra resolver, así que decidió contratarnos para que le demos una solución basada en software. El ejercicio le da tres puntos en el plano, cada uno con coordenadas **X** y **Y**, y él debe responde cuál de los **últimos puntos** está más cerca **del primero** y cuál está más lejos.
 
-10. Sergio entregó el ejercicio, pero el profesor sospechó que se copió, así que le mandó solo a él varios ejercicios en donde debe hacer lo mismo, pero con **más de tres puntos en el plano**. Razone brevemente, sin escribir ningún programa, ¿cómo se podría modificar el programa original para que funcione con más tres puntos?
+10. Sergio entregó el ejercicio, pero el profesor sospechó que se copió, así que le mandó solo a él varios ejercicios en donde debe hacer lo mismo, pero con **más de tres puntos en el plano**. Razone brevemente, sin escribir ningún programa, ¿cómo se podría modificar el programa original para que funcione con más de tres puntos?
 
 11. Pablo se metió en problemas con un cliente: entregó una aplicación que calcula los días que lleva el año actual, pero no consideró la posibilidad de que el año sea bisiesto. Realiza un programa que ayude a Pablo a saber si un año es bisiesto.
 
