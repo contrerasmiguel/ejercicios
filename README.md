@@ -967,3 +967,25 @@ Las sentencias y expresiones condicionales permiten expresar multiples caminos d
     * **Salida:** 307
 
     **Razonamiento:** La *F* corresponde al número *3*, el *cero* corresponde al *mismo número* y la *S* corresponde al número *7*.
+
+9. Sergio estudia en la UDO, por lo que es obligatorio que vea, al menos, Matemática I. En esta materia, le mandaron un ejercicio que no logra resolver, así que decidió contratarnos para que le demos una solución basada en software. El ejercicio le da tres puntos en el plano, cada uno con coordenadas **X** y **Y**, y él debe responde cuál de los **últimos puntos** está más cerca **del primero** y cuál está más lejos.
+
+10. Sergio entregó el ejercicio, pero el profesor sospechó que se copió, así que le mandó solo a él varios ejercicios en donde debe hacer lo mismo, pero con **más de tres puntos en el plano**. Razone brevemente, sin escribir ningún programa, ¿cómo se podría modificar el programa original para que funcione con más tres puntos?
+
+11. Pablo se metió en problemas con un cliente: entregó una aplicación que calcula los días que lleva el año actual, pero no consideró la posibilidad de que el año sea bisiesto. Realiza un programa que ayude a Pablo a saber si un año es bisiesto.
+
+12. A Pablo le gustó el trabajo que hiciste, así que decidió pagarte USD 10.000 para que le hagas el programa que originalmente debía entregar él. Este consiste en decir cuántos días van de la fecha que el usuario introduce, la cual no necesariamente corresponde a la fecha actual, es decir, también puede ser una del pasado o futuro. Como programador, podrás decidir el formato en que el usuario ingresa la fecha.
+
+13. A Víctor le gustaría transformar, a números romanos, cantidades enteras positivas no mayores a *2021*. Escribe un programa que le provea de una solución.
+
+    Ejemplo:
+
+    * **Entrada:** 2021
+
+    * **Salida:** MMXXI
+
+    Otro ejemplo:
+
+    * **Entrada:** 590
+
+    * **Salida:** DXC
