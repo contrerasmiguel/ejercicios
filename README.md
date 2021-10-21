@@ -978,7 +978,7 @@ Las sentencias y expresiones condicionales permiten expresar multiples caminos d
 
 13. Rafael fue a comprar una chupeta al negocio de Wasamara. Luego de pedir la paleta, solicitó al anciano descontarlo de su línea de crédito personal, a lo que Wasamara respondió con que él nunca fiaba y que a él, en particular, nunca lo había visto en su vida, así que debía pagar con dinero en efectivo como todos los demás. Rafael, enojado, pagó con 400 dólares americanos en efectivo.
 
-    Si el dulce tenía un **precio de 164 dólares** y el vendedor tenía **disponible billetes de 500, 100, 50, 20, 10, 5 y 1** para dar vuelto, ¿cuántos billetes de cada demoninación debía dar para completar el vuelto de Rafael? Realice un programa que permita resolver este problema para cualquier combinación de precio y monto pagado.
+    Si el dulce tenía un **precio de 164 dólares** y el vendedor tenía **disponible billetes de 500, 100, 50, 20, 10, 5, 2 y 1** para dar vuelto, ¿cuántos billetes de cada demoninación debía dar para completar el vuelto de Rafael? Realice un programa que permita resolver este problema para cualquier combinación de precio y monto pagado.
 
     Por ejemplo: ¿qué billetes tendría que dar de vuelto Wasamara si el cliente pagó 300 dólares para una compra de 211?
 
