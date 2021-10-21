@@ -976,7 +976,15 @@ Las sentencias y expresiones condicionales permiten expresar multiples caminos d
 
 12. A Pablo le gustó el trabajo que hiciste, así que decidió pagarte USD 10.000 para que le hagas el programa que originalmente debía entregar él. Este consiste en decir cuántos días van de la fecha que el usuario introduce, la cual no necesariamente corresponde a la fecha actual, es decir, también puede ser una del pasado o futuro. Como programador, podrás decidir el formato en que el usuario ingresa la fecha.
 
-13. A Víctor le gustaría transformar, a números romanos, cantidades enteras positivas no mayores a *2021*. Escribe un programa que le provea de una solución.
+13. Rafael fue a comprar una chupeta al negocio de Wasamara. Luego de pedir la paleta, solicitó al anciano descontarlo de su línea de crédito personal, a lo que Wasamara respondió con que él nunca fiaba y que a él, en particular, nunca lo había visto en su vida, así que debía pagar con dinero en efectivo como todos los demás. Rafael, enojado, pagó con 400 dólares americanos en efectivo.
+
+    Si el dulce tenía un **precio de 164 dólares** y el vendedor tenía **disponible billetes de 500, 100, 50, 20, 10, 5 y 1** para dar vuelto, ¿cuántos billetes de cada demoninación debía dar para completar el vuelto de Rafael? Realice un programa que permita resolver este problema para cualquier combinación de precio y monto pagado.
+
+    Por ejemplo: ¿qué billetes tendría que dar de vuelto Wasamara si el cliente pagó 300 dólares para una compra de 211?
+
+    **Nota:** el monto máximo posible para una compra es de 1.000 dólares americanos y nada es gratis en la tienda.
+
+14. A Víctor le gustaría transformar, a números romanos, cantidades enteras positivas no mayores a *2021*. Escribe un programa que le provea de una solución.
 
     Ejemplo:
 
