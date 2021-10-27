@@ -21,6 +21,9 @@ Se alienta alienta al lector a compartir sus soluciones con el autor del problem
 * [5 Condiciones](#5-condiciones)
   * [5.1 Conceptos básicos](#51-conceptos-básicos)
   * [5.2 Problemas](#52-problemas)
+* [6 Ciclos](#6-ciclos)
+  * [6.1 Conceptos básicos](#61-conceptos-básicos)
+  * [6.2 Problemas](#62-problemas)
 
 ## 1 Entrada y salida I
 
@@ -997,3 +1000,170 @@ Las sentencias y expresiones condicionales permiten expresar multiples caminos d
     * **Entrada:** 590
 
     * **Salida:** DXC
+
+## 6 Ciclos
+
+[ [Índice](#tabla-de-contenidos) ]
+
+Para lograr algunas soluciones, se hace necesario repetir un mismo procedimiento hasta que se cumpla cierta condición. Como ejemplo sencillo de tal tipo de tarea encontramos mostrar los números pertenecientes a una serie, mostrar un menú de manera reiterada hasta que el usuario decida abandonarlo o leer los elementos de una matriz.
+
+Para un número determinado de operaciones, es posible cubrir todos estos casos con estructuras de ```if-else```, pero el código suele resultar extenso, sin mencionar que se hace frágil a cambios sencillos. En dicho sentido, existen estructuras llamadas *ciclos* (en inglés *loops*) que permiten representar un procedimiento que debe realizarse de manera reiterada.
+
+### 6.1 Conceptos básicos
+
+[ [Índice](#tabla-de-contenidos) ]
+
+Cada lenguaje de programación suele proveer de ciertas herramientas para expresar ciclos; las siguientes están entre las más comunes:
+
+* **```while```**: en este tipo de ciclo, se ejecutan una serie de instrucciones siempre que se de cierta condición. Por ejemplo, si *n* es mayor a 0, restarle 1 a *n*. Nótese que la acción de restar solo se ejecuta si la condición se da.
+
+* **```do-while:```** a diferencia del ciclo *mientras*, el *hacer-mientras* no pregunta primero por la condición, si no que ejecuta primero las instrucciones que contiene y utiliza la condición para saber si debe continuar las siguientes iteraciones.
+
+    **Nota:** una iteración es una vuelta del ciclo. Por ejemplo, cinco iteraciones significa que el código del ciclo se ejecutó cinco veces, y la tercera iteración se refiere a la tercera ejecución de dicho código.
+
+* **```for:```** los *for* son una versión más sofisticada del ciclo *while*. En estos también se tiene una condición que determina si la siguiente iteración se debe ejecutar, teniendo a su vez otros dos parámetros en los que se puede controlar la manera en la que arranca y avanza el ciclo. Es especialmente útil para llevar el control del número de iteraciones.
+
+* **Funciones recursivas**: otra forma de ejecutar un código de manera reiterada es ponerlo en una función y hacer que esa función se llame a sí misma. Los lenguajes de programación funcional suelen utilizar este método, mientras que aquellos que se inclinan más por la programación imperativa suelen darle prioridad a los ```while```, ```do-while``` y ```for```.
+
+### 6.2 Problemas
+
+[ [Índice](#tabla-de-contenidos) ]
+
+1. Realice un programa que permita al usuario introducir un mensaje y, seguidamente, lo muestre de manera reiterada. La única forma de detener tal programa será cerrándolo de manera forzada, ya sea con *Ctrl + C* o cualquier otro método que provea el sistema operativo.
+
+    Por ejemplo:
+
+    * **Entrada:** Repite este mensaje
+
+    * **Salida:**
+        * Repite este mensaje
+
+        * Repite este mensaje
+
+        * Repite este mensaje
+
+        * Repite este mensaje
+
+        * Repite este mensaje
+
+        * ...
+
+2. Realice una aplicación que pregunte al usuario si desea ver el menú de opciones. Si el usuario responde que no, simplemente terminar la ejecución y, si responde que sí, mostrarle un menú con las siguientes opciones:
+
+    0. Salir
+
+    1. Seguir mostrando menú
+
+    De seleccionar la opción 1, se le debe volver a mostrar el mismo menú al usuario. En cambio, si seleccionó la opción 0, el programa debe finalizar su ejecución.
+
+    **Consejo:** analizar primero cuál de los ciclos disponibles es el mejor para ejecutar una tarea solo si *primero* se da cierta condición.
+
+3. Realice una aplicación que muestre un menú con las siguientes opciones:
+
+    0. Salir
+
+    1. Seguir mostrando menú
+
+    De seleccionar la opción 1, se le debe volver a mostrar el mismo menú al usuario. En cambio, si seleccionó la opción 0, el programa debe finalizar su ejecución.
+
+    **Consejo:** analizar primero cuál de los ciclos disponibles es el mejor para ejecutar una tarea *al menos una vez* y luego preguntar por alguna vez para ver si se debe repetir el proceso.
+
+4. Realice una aplicación que le solicite al usuario su nombre y luego muestre un menú con las siguientes opciones:
+
+    0. Salir
+
+    1. Mostrar su nombre
+
+    De seleccionar la opción 1, el programa deberá mostrar al usuario su nombre y esperar a que el usuario introduzca cualquier cosa para volver a mostrar el menú. En cambio, si seleccionó la opción 0, el programa debe finalizar su ejecución.
+
+    **Consejo:** al usar las funciones de lectura de la entrada, el programa quedará esperando hasta que se introduzca cualquier cosa. Sin embargo, se debe cuidar que las siguientes iteraciones del menú no queden datos en el buffer de entrada, ya que estos pueden interferir al momento de seleccionar la próxima opción.
+
+5. Realice un programa que reciba un número entero mayor a cero y escriba, en la salida estándar, la cuenta regresiva desde tal número hasta cero.
+
+    Por ejemplo:
+
+    * **Entrada:** 5
+
+    * **Salida:** 5 4 3 2 1 0
+
+    Otro ejemplo:
+
+    * **Entrada:** 1
+
+    * **Salida:** 1 0
+
+6. Realice un programa que reciba un número entero mayor a 1 y escriba, en la salida estándar, la cuenta progresiva desde 1 hasta dicho número.
+
+    Por ejemplo:
+
+    * **Entrada:** 5
+
+    * **Salida:** 1 2 3 4 5
+
+    Otro ejemplo:
+
+    * **Entrada:** 2
+
+    * **Salida:** 1 2
+
+7. Realice un programa que reciba un número entero mayor a 1 y escriba, en la salida estándar, de tres en tres, la cuenta progresiva hasta ese número.
+
+    Por ejemplo:
+
+    * **Entrada:** 14
+
+    * **Salida:** 1 4 7 10 13
+
+    * **Razonamiento:** la cuenta va de tres en tres desde el 1, y termina cuando el siguiente a mostrar sea mayor al número introducido al usuario.
+
+    Otro ejemplo:
+
+    * **Entrada:** 3
+
+    * **Salida:** 1
+
+8. Realice un programa que reciba un número entero mayor o igual a tres y escriba, en la salida estándar, de tres en tres, la cuenta regresiva hasta cero.
+
+    Por ejemplo:
+
+    * **Entrada:** 11
+
+    * **Salida:** 11 8 5 2
+
+    * **Razonamiento:** La cuenta empieza en el número introducido por el usuario y en cada iteración se resta tres. La serie termina cuando el número a mostrar es menor a cero.
+
+    Otro ejemplo:
+
+    * **Entrada:** 3
+
+    * **Salida:** 3
+
+9. Realice un programa que reciba un número entero *n* y muestra la cuenta regresiva de los números impares, desde *n* hasta cero, en pasos de tres.
+
+    Por ejemplo:
+
+    * **Entrada:** 26
+
+    * **Salida:** 23 17 11 5
+
+    Otro ejemplo:
+
+    * **Entrada:** 25
+
+    * **Salida:** 25 19 13 7 1
+
+10. Realice un programa que reciba un número entero *n* mayor o igual a 5 y haga la cuenta progresiva en pasos de dos desde 5 hasta dicho número y luego de vuelta hasta -10.
+
+    Por ejemplo:
+
+    * **Entrada:** 12
+
+    * **Salida:** 5 7 9 11 9 7 5 3 1 -1 -3 -7 -9
+
+    Otro ejemplo:
+
+    * **Entrada:** 9
+
+    * **Salida:** 5 7 9 7 5 3 1 -1 -3 -7 -9
+
+    **Consejo:** considerar utilizar dos ciclos ```for```, uno seguido del otro y que el segundo continúe, de alguna manera, lo que estaba haciendo el primero.
