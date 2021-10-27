@@ -1015,13 +1015,13 @@ Para un número determinado de operaciones, es posible cubrir todos estos casos 
 
 Cada lenguaje de programación suele proveer de ciertas herramientas para expresar ciclos; las siguientes están entre las más comunes:
 
-* **```while```**: en este tipo de ciclo, se ejecutan una serie de instrucciones siempre que se de cierta condición. Por ejemplo, si *n* es mayor a 0, restarle 1 a *n*. Nótese que la acción de restar solo se ejecuta si la condición se da.
+* **```while```:** en este tipo de ciclo, se ejecutan una serie de instrucciones siempre que se de cierta condición. Por ejemplo, si *n* es mayor a 0, restarle 1 a *n*. Nótese que la acción de restar solo se ejecuta si la condición se da.
 
-* **```do-while:```** a diferencia del ciclo *mientras*, el *hacer-mientras* no pregunta primero por la condición, si no que ejecuta primero las instrucciones que contiene y utiliza la condición para saber si debe continuar las siguientes iteraciones.
+* **```do-while```:** a diferencia del ciclo *mientras*, el *hacer-mientras* no pregunta primero por la condición, si no que ejecuta primero las instrucciones que contiene y utiliza la condición para saber si debe continuar las siguientes iteraciones.
 
     **Nota:** una iteración es una vuelta del ciclo. Por ejemplo, cinco iteraciones significa que el código del ciclo se ejecutó cinco veces, y la tercera iteración se refiere a la tercera ejecución de dicho código.
 
-* **```for:```** los *for* son una versión más sofisticada del ciclo *while*. En estos también se tiene una condición que determina si la siguiente iteración se debe ejecutar, teniendo a su vez otros dos parámetros en los que se puede controlar la manera en la que arranca y avanza el ciclo. Es especialmente útil para llevar el control del número de iteraciones.
+* **```for```:** los *for* son una versión más sofisticada del ciclo *while*. En estos también se tiene una condición que determina si la siguiente iteración se debe ejecutar, teniendo a su vez otros dos parámetros en los que se puede controlar la manera en la que arranca y avanza el ciclo. Es especialmente útil para llevar el control del número de iteraciones.
 
 * **Funciones recursivas**: otra forma de ejecutar un código de manera reiterada es ponerlo en una función y hacer que esa función se llame a sí misma. Los lenguajes de programación funcional suelen utilizar este método, mientras que aquellos que se inclinan más por la programación imperativa suelen darle prioridad a los ```while```, ```do-while``` y ```for```.
 
