@@ -1023,7 +1023,7 @@ Cada lenguaje de programación suele proveer de ciertas herramientas para expres
 
 * **```for```:** los *for* son una versión más sofisticada del ciclo *while*. En estos también se tiene una condición que determina si la siguiente iteración se debe ejecutar, teniendo a su vez otros dos parámetros en los que se puede controlar la manera en la que arranca y avanza el ciclo. Es especialmente útil para llevar el control del número de iteraciones.
 
-* **Funciones recursivas**: otra forma de ejecutar un código de manera reiterada es ponerlo en una función y hacer que esa función se llame a sí misma. Los lenguajes de programación funcional suelen utilizar este método, mientras que aquellos que se inclinan más por la programación imperativa suelen darle prioridad a los ```while```, ```do-while``` y ```for```.
+* **Funciones recursivas**: otra forma de ejecutar un código de manera reiterada es ponerlo en una función y hacer que se llame a sí misma. Los lenguajes de programación funcional suelen utilizar este método, mientras que aquellos que se inclinan más por la programación imperativa suelen darle prioridad a los ```while```, ```do-while``` y ```for```.
 
 ### 6.2 Problemas
 
