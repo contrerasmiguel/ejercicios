@@ -1005,9 +1005,9 @@ Las sentencias y expresiones condicionales permiten expresar multiples caminos d
 
 [ [Índice](#tabla-de-contenidos) ]
 
-Para lograr algunas soluciones, se hace necesario repetir un mismo procedimiento hasta que se cumpla cierta condición. Como ejemplo sencillo de tal tipo de tarea encontramos mostrar los números pertenecientes a una serie, mostrar un menú de manera reiterada hasta que el usuario decida abandonarlo o leer los elementos de una matriz.
+Algunos problemas requieren soluciones en las que es necesario repetir un procedimiento hasta que se cumpla cierta condición. Como ejemplos sencillo, encontramos las tareas de mostrar los números pertenecientes a una serie, mostrar un menú de manera reiterada hasta que el usuario decida abandonarlo y leer los elementos de una matriz.
 
-Para un número determinado de operaciones, es posible cubrir todos estos casos con estructuras de ```if-else```, pero el código suele resultar extenso, sin mencionar que se hace frágil a cambios sencillos. En dicho sentido, existen estructuras llamadas *ciclos* (en inglés *loops*) que permiten representar un procedimiento que debe realizarse de manera reiterada.
+Para un número determinado de operaciones, es posible cubrir todos estos casos con estructuras de ```if-else```, pero el código suele extenderse demasiado, sin mencionar que queda muy frágil ante cambios sencillos. En dicho sentido, existen estructuras llamadas *ciclos* (en inglés *loops*) que permiten representar un procedimiento que debe realizarse de manera repetitiva.
 
 ### 6.1 Conceptos básicos
 
