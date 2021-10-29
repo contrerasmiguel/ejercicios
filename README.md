@@ -1066,7 +1066,7 @@ Cada lenguaje de programación suele proveer de ciertas herramientas para expres
 
     De seleccionar la opción 1, se le debe volver a mostrar el mismo menú al usuario. En cambio, si seleccionó la opción 0, el programa debe finalizar su ejecución.
 
-    **Consejo:** analizar primero cuál de los ciclos disponibles es el mejor para ejecutar una tarea *al menos una vez* y luego preguntar por alguna vez para ver si se debe repetir el proceso.
+    **Consejo:** analizar primero cuál de los ciclos disponibles es el mejor para ejecutar una tarea *al menos una vez* y luego preguntar por alguna condición para ver si se debe repetir el proceso.
 
 4. Realice una aplicación que le solicite al usuario su nombre y luego muestre un menú con las siguientes opciones:
 
