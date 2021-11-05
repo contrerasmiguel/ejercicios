@@ -1152,18 +1152,18 @@ Cada lenguaje de programación suele proveer de ciertas herramientas para expres
 
     * **Salida:** 25 19 13 7 1
 
-10. Realice un programa que reciba un número entero *n* mayor o igual a 5 y haga la cuenta progresiva en pasos de dos desde 5 hasta dicho número y luego de vuelta hasta -10.
+10. Realice un programa que reciba un número entero *n* mayor o igual a 5 y haga la cuenta progresiva en pasos de dos desde 5 hasta dicho número y luego de vuelta hasta -9.
 
     Por ejemplo:
 
     * **Entrada:** 12
 
-    * **Salida:** 5 7 9 11 9 7 5 3 1 -1 -3 -7 -9
+    * **Salida:** 5 7 9 11 9 7 5 3 1 -1 -3 -5 -7 -9
 
     Otro ejemplo:
 
     * **Entrada:** 9
 
-    * **Salida:** 5 7 9 7 5 3 1 -1 -3 -7 -9
+    * **Salida:** 5 7 9 7 5 3 1 -1 -3 -5 -7 -9
 
     **Consejo:** considerar utilizar dos ciclos ```for```, uno seguido del otro y que el segundo continúe, de alguna manera, lo que estaba haciendo el primero.
