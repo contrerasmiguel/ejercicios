@@ -1136,7 +1136,7 @@ Cada lenguaje de programación suele proveer de ciertas herramientas para expres
 
     * **Entrada:** 3
 
-    * **Salida:** 3
+    * **Salida:** 3 0
 
 9. Realice un programa que reciba un número entero *n* y muestra la cuenta regresiva de los números impares, desde *n* hasta cero, en pasos de tres.
 
