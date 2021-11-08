@@ -1028,9 +1028,9 @@ Las sentencias y expresiones condicionales permiten expresar multiples caminos d
 
 [ [Índice](#tabla-de-contenidos) ]
 
-Para lograr algunas soluciones, se hace necesario repetir un mismo procedimiento hasta que se cumpla cierta condición. Como ejemplo sencillo de tal tipo de tarea encontramos mostrar los números pertenecientes a una serie, mostrar un menú de manera reiterada hasta que el usuario decida abandonarlo o leer los elementos de una matriz.
+Algunos problemas requieren soluciones en las que es necesario repetir un procedimiento hasta que se cumpla cierta condición. Como ejemplos sencillo, encontramos las tareas de mostrar los números pertenecientes a una serie, mostrar un menú de manera reiterada hasta que el usuario decida abandonarlo y leer los elementos de una matriz.
 
-Para un número determinado de operaciones, es posible cubrir todos estos casos con estructuras de ```if-else```, pero el código suele resultar extenso, sin mencionar que se hace frágil a cambios sencillos. En dicho sentido, existen estructuras llamadas *ciclos* (en inglés *loops*) que permiten representar un procedimiento que debe realizarse de manera reiterada.
+Para un número determinado de operaciones, es posible cubrir todos estos casos con estructuras de ```if-else```, pero el código suele extenderse demasiado, sin mencionar que queda muy frágil ante cambios sencillos. En dicho sentido, existen estructuras llamadas *ciclos* (en inglés *loops*) que permiten representar un procedimiento que debe realizarse de manera repetitiva.
 
 ### 6.1 Conceptos básicos
 
@@ -1089,7 +1089,7 @@ Cada lenguaje de programación suele proveer de ciertas herramientas para expres
 
     De seleccionar la opción 1, se le debe volver a mostrar el mismo menú al usuario. En cambio, si seleccionó la opción 0, el programa debe finalizar su ejecución.
 
-    **Consejo:** analizar primero cuál de los ciclos disponibles es el mejor para ejecutar una tarea *al menos una vez* y luego preguntar por alguna vez para ver si se debe repetir el proceso.
+    **Consejo:** analizar primero cuál de los ciclos disponibles es el mejor para ejecutar una tarea *al menos una vez* y luego preguntar por alguna condición para ver si se debe repetir el proceso.
 
 4. Realice una aplicación que le solicite al usuario su nombre y luego muestre un menú con las siguientes opciones:
 
@@ -1159,7 +1159,7 @@ Cada lenguaje de programación suele proveer de ciertas herramientas para expres
 
     * **Entrada:** 3
 
-    * **Salida:** 3
+    * **Salida:** 3 0
 
 9. Realice un programa que reciba un número entero *n* y muestra la cuenta regresiva de los números impares, desde *n* hasta cero, en pasos de tres.
 
@@ -1175,19 +1175,19 @@ Cada lenguaje de programación suele proveer de ciertas herramientas para expres
 
     * **Salida:** 25 19 13 7 1
 
-10. Realice un programa que reciba un número entero *n* mayor o igual a 5 y haga la cuenta progresiva en pasos de dos desde 5 hasta dicho número y luego de vuelta hasta -10.
+10. Realice un programa que reciba un número entero *n* mayor o igual a 5 y haga la cuenta progresiva en pasos de dos desde 5 hasta dicho número y luego de vuelta hasta -9.
 
     Por ejemplo:
 
     * **Entrada:** 12
 
-    * **Salida:** 5 7 9 11 9 7 5 3 1 -1 -3 -7 -9
+    * **Salida:** 5 7 9 11 9 7 5 3 1 -1 -3 -5 -7 -9
 
     Otro ejemplo:
 
     * **Entrada:** 9
 
-    * **Salida:** 5 7 9 7 5 3 1 -1 -3 -7 -9
+    * **Salida:** 5 7 9 7 5 3 1 -1 -3 -5 -7 -9
 
     **Consejo:** considerar utilizar dos ciclos ```for```, uno seguido del otro y que el segundo continúe, de alguna manera, lo que estaba haciendo el primero.
 
