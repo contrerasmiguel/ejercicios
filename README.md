@@ -7,23 +7,46 @@ Se alienta alienta al lector a compartir sus soluciones con el autor del problem
 ## Tabla de contenidos
 
 * [1 Entrada y salida I](#1-entrada-y-salida-i)
+
   * [1.1 Conceptos básicos](#11-conceptos-básicos)
+
   * [1.2 Problemas](#12-problemas)
+
 * [2 Entrada y salida II](#2-entrada-y-salida-ii)
+
   * [2.1 Conceptos básicos](#21-conceptos-básicos)
+
   * [2.2 Problemas](#22-problemas)
+
 * [3 Intercambio de valores](#3-intercambio-de-valores)
+
   * [3.1 Conceptos básicos](#31-conceptos-básicos)
+
   * [3.2 Problemas](#32-problemas)
+
 * [4 Operaciones con booleanos](#4-operaciones-con-booleanos)
+
   * [4.1 Conceptos básicos](#41-conceptos-básicos)
+
   * [4.2 Problemas](#42-problemas)
+
 * [5 Condiciones](#5-condiciones)
+
   * [5.1 Conceptos básicos](#51-conceptos-básicos)
+
   * [5.2 Problemas](#52-problemas)
+
 * [6 Ciclos](#6-ciclos)
+
   * [6.1 Conceptos básicos](#61-conceptos-básicos)
+
   * [6.2 Problemas](#62-problemas)
+
+* [7 Estructuras de datos](#7-estructuras-de-datos)
+
+  * [7.1 Conceptos básicos](#71-conceptos-básicos)
+  
+  * [7.2 Problemas](#72-problemas)
 
 ## 1 Entrada y salida I
 
@@ -1167,3 +1190,113 @@ Cada lenguaje de programación suele proveer de ciertas herramientas para expres
     * **Salida:** 5 7 9 7 5 3 1 -1 -3 -7 -9
 
     **Consejo:** considerar utilizar dos ciclos ```for```, uno seguido del otro y que el segundo continúe, de alguna manera, lo que estaba haciendo el primero.
+
+## 7 Estructuras de datos
+
+[ [Índice](#tabla-de-contenidos) ]
+
+Un elemento clave en la resolución de problemas es la selección de las estructuras de datos adecuadas. En la presente sección, se explora tales estructuras a un nivel básico.
+
+### 7.1 Conceptos básicos
+
+[ [Índice](#tabla-de-contenidos) ]
+
+* **Estructura de datos:** una estructura de datos es una forma particular de organizar datos en una computadora para que puedan ser utilizados de manera eficiente. Ejemplos de estructuras de datos incluyen vectores (también llamados arreglos) y pilas.
+
+* **Vector:** un vector, también conocido como arreglo, es una serie de elementos en un orden específico. Se accede a los elementos utilizando un entero como índice para especificar el elemento que se requiere.
+
+* **Pila:** una pila (stack en inglés) es una lista ordenada o estructura de datos que permite almacenar y recuperar datos, siendo el modo de acceso a sus elementos de tipo LIFO (del inglés Last In, First Out, último en entrar, primero en salir).
+
+### 7.2 Problemas
+
+[ [Índice](#tabla-de-contenidos) ]
+
+1. Realice un programa que muestre al usuario **un menú** con las siguientes opciones:
+
+    * **a**. Solicita al usuario introducir un número y luego le dice si es par o impar.
+
+    * **b**. Solicita al usuario introducir una oración y luego muestra cada uno de sus caracteres en líneas separadas. Por ejemplo:
+
+        **Entrada:** Sí, no
+
+        **Salida:**
+
+        * S
+
+        * í
+
+        * , (esta es una coma)
+
+        * &nbsp; (este es un espacio)
+
+        * n
+
+        * o
+
+    * **x**. Salir
+
+    **Nota:** es obligatorio usar las letras **a**, **b** y **x** como opciones. Si el usuario introduce una opción fuera de esas letras, se le debe solicitar que introduzca una opción válida. La única forma de salir del programa es ingresando *x* como opción.
+
+2. Figueroa recibió sus notas de las últimas 5 materias del bachillerato. Las notas mayores o iguales a 10 corresponden a asignaturas aprobadas, mientras que el resto son las que reprobó. Él no entiende esto, así que decidió pagar 30.000 USD para que le construyan una aplicación que le diga, **por cada nota**, si aprobó o reprobó.
+
+    **Nota:** en este problema es clave solicitarle a Figueroa que introduzca todas las notas **antes** de mostrarle cuáles corresponden a *aprobado* y cuáles a *reprobado*.
+
+3. Zapata estudia en el mismo colegio que Figueroa y también desea que le construyan un programa que le diga las notas aprobadas y las reprobadas. El problema es que no se sabe de antemano cuántas materias vio Zapata, por lo que se debe diseñar su aplicación para un número **variable** de materias.
+
+    **Nota:** cuando es cierto que no se sabe la cantidad de materias de antemano, se puede optar por que el programa le pregunte al usuario cuántas notas ingresará, para luego trabajar con dicho número como una variable en el código.
+
+    **Límite:** Zapata no debe introducir más de 32 notas.
+
+4. Édgar decidió relajarse este fin de semana con la manada de la urbanización. Compró licor e invitó a todos a su casa, para que participen en un juego de tragos. En cada ronda se siguen los pasos a continuación:
+
+    * Se elige una letra.
+
+    * En el sentido de las agujas del reloj, cada participante deberá decir una palabra por esa letra.
+
+    * Si pasan 12 personas y ninguno se equivoca, todos deberán tomar un trago seco.
+
+    * Por otro lado, el que se equivoque o tarde más de cinco segundos en responder, tendrá la oportunidad de decir, en orden inverso, **todas** las palabras que se han dicho en la ronda.
+
+        * Si no logra decir todas las palabras en el orden correcto, le toca un trago seco.
+
+        * Si logra decirlas correctamente, todos los demás deberán pagar la penitencia del trago seco.
+
+    El problema es que es muy difícil recordar las palabras que han dicho los participantes, por lo que sería útil una aplicación que permita registrarlas, una por una, y luego mostrarlas en orden inverso a petición del usuario.
+
+    **Nota:** en este caso de uso particular, a pesar de que se sabe que no pueden pasar más de 12 personas, es imposible saber al principio del juego cuántas personas pasarán antes de que alguien se equivoque, por lo que es recomendable preguntarle al usuario si desea mostrar las palabras registradas de manera reiterada.
+
+5. Bárbara está organizando otra fiesta en la casa de Édgar. Dado el éxito que tuvo el juego de tragos en la oportunidad pasada, decidieron repetirlo pero modificando un poco las reglas, ya que la última vez todos utilizaron la aplicación que creaste, lo que los llevó a un estado de gran ebriedad. La idea por la que Bárbara está dispuesta a pagar 70.000 USD es la siguiente:
+
+    * Se elige una letra.
+
+    * En el sentido de las agujas del reloj, cada participante deberá decir una palabra por esa letra.
+
+    * **A diferencia de la primera versión del juego**, no hay límite en cuanto a la cantidad de personas que pueden decir palabras correctas. La ronda simplemente continúa hasta que alguien se equivoque.
+
+    * Por otro lado, el que se equivoque o tarde más de cinco segundos en responder, tendrá la oportunidad de decir, en orden inverso, **todas** las palabras que se han dicho en la ronda.
+
+        * Si no logra decir todas las palabras en el orden correcto, le toca un trago seco.
+
+        * Si logra decirlas correctamente, todos los demás deberán pagar la penitencia del trago seco.
+
+    El problema es que es muy difícil recordar las palabras que han dicho los participantes, por lo que sería útil una aplicación que permita registrarlas, una por una, y luego mostrarlas en orden inverso a petición del usuario.
+
+6. Dado que la última fiesta de Bárbara fue un éxito, decidió repetirla pero esta vez en la casa de Tomás, el señor que vende pollos. También, desea contratarte nuevamente para que hagas una pequeña modificación a la aplicación que va almacenando las palabras que se dicen en el juego, debido a que llegaba a un punto en el que tocaba decir demasiadas palabras, tantas que era preferible perder a propósito y beber hasta quedar muy ebrio. Aquí las reglas ligeramente modificadas:
+
+    * Se elige una letra.
+
+    * En el sentido de las agujas del reloj, cada participante deberá decir una palabra por esa letra.
+
+    * No hay límite en cuanto a la cantidad de personas que pueden decir palabras correctas. La ronda simplemente continúa hasta que alguien se equivoque.
+
+    * Por otro lado, el que se equivoque o tarde más de cinco segundos en responder, tendrá la oportunidad de decir, **en orden**, las primeras palabras que se dijeron en el juego.
+
+        * **Si son muchas palabras, basta con que diga las primeras 12. Si son menos, es necesario que las diga todas.**
+
+        * Si no logra decir todas las palabras en el orden correcto, le toca un trago seco.
+
+        * Si logra decirlas correctamente, todos los demás deberán pagar la penitencia del trago seco.
+
+    El problema es que es muy difícil recordar las palabras que han dicho los participantes, por lo que sería útil una aplicación que permita registrarlas, una por una, y luego mostrarlas en orden inverso a petición del usuario.
+
+    **Nota:** a diferencia de las otras fiestas, las palabras se deberán en el mismo orden que fueron dichas y no en orden inverso.
