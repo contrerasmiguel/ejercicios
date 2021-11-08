@@ -1195,7 +1195,7 @@ Cada lenguaje de programación suele proveer de ciertas herramientas para expres
 
 [ [Índice](#tabla-de-contenidos) ]
 
-Un elemento clave en la resolución de problemas es la selección de las estructuras de datos adecuadas. En la presente sección, se explora tales estructuras a un nivel básico.
+Un elemento clave en la resolución de problemas es la selección de estructuras de datos adecuadas. En la presente sección, se exploran algunos problemas básicos que se resuelven mejor empleando dichas estructuras.
 
 ### 7.1 Conceptos básicos
 
