@@ -1300,3 +1300,53 @@ Un elemento clave en la resolución de problemas es la selección de estructuras
     El problema es que es muy difícil recordar las palabras que han dicho los participantes, por lo que sería útil una aplicación que permita registrarlas, una por una, y luego mostrarlas en orden inverso a petición del usuario.
 
     **Nota:** a diferencia de las otras fiestas, las palabras se deberán en el mismo orden que fueron dichas y no en orden inverso.
+
+7. Las gallinas de Dominguito se multiplicaron, tanto asi que ahora posee 10 lotes cada uno con 5 gallinas gordas, y cada cierto tiempo debe sacar a cierta gallina a pelarse a la barberia.
+
+    El problema es que Dominguito ultimamente tiene muy mala memoria, y detesta que cada vez que tenga que sacar a pelar a cierta gallina especifica, se tenga que mover y revisar cada uno de los lotes, aparte de eso 7 de esas gallinas requieren cuidados especiales para poder pelarse por lo que deben ir a una barberia especial.
+
+    Dominguito entonces necesita una solucion a su problema, asi que para solucionarlo penso en pasar por la casa de cumana ii robar algunas cosas y luego venderlas en pantanillo, y de esa forma poder pagarle a un programador y que este le diseñe una aplicacion para lo siguiente:
+
+    1. poder enumerar cinco gallinas o mas en cada lote para asi poder ver desde la pc o el telefono donde esta la gallina que necesita pelar, y asi el no tenga que moverse y hacer esfuerzo alguno
+
+    2. seleccionar una de esas gallinas y que la aplicacion le recuerde, si esa gallina debe ir a pelarse a una barberia especial o no. Debido a que el ya esta harto de esforzarse mentalmente y recordar cual de las gallinas requieren un pelado especial.
+
+    **Nota:** dominguito de antemano sabe estas cosas, pero el siente que las puede olvidar, por esa razon antes de olvidarlas las quire anotar en el programa. Para que despues el no tenga que esforzarse y el programa haga todo por el, y asi el cuide su fisico y su memoria
+
+8. Abuelo formateo su computadora por que el otro dia la infecto de virus bajando algo por ares, y luego de haberla formateado intento instalar los siguientes programas:
+
+    * Emule = 2 gb
+
+    * Ares = 500 mb
+
+    * Limewire = 10gb
+
+    * Frostwire 10 mb
+
+    * Aresplus = 20 gb
+
+    * Google chrome = 2 gb
+
+    * Nero 230 = mb
+
+    * Nero premium 2 gb
+
+    * Avast = 5 gb
+
+    * Norton 13 gb
+
+    Pero windows xp no se lo permitio por 2 razones. La primera es que la computadora solo tiene 52,7 gbs de espacio, pero el realmente no sabe cuanto pesa cada programa, y se le hace dificil averiguarlo, y calcularlo, y el otro problema es que uno de los programas no es compatible con windows xp, parece ser uno de los antivirus, por lo que decidio pedirle a panina que le programara una aplicacion, la cual se encargue de hacerle una lista con los programas disponibles, para luego preguntarle cual desea instalar y que le diga si es posible instalar los programas seleccionados o no.
+
+    El programa debe hacer lo siguiente:
+
+    1. mostrar una lista con los programas disponibles
+
+    2. preguntarle al usuario cuales desea instalar
+
+    3. decirle si es posible instalar los programas seleccionados o no. Ya sea por que no alcanza el espacio, o por que esta en la lista hay un programa que no es compatible con windows xp
+
+    **Nota:**
+
+    * el programador debe elegir cual de esos antivirus sera el que no es compatible con windows xp.
+
+    * si alguno de los programas incluidos no es compatible con windows xp, el programa debe de mostrar cual de los programas es incompatible.
