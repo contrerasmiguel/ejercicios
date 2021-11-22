@@ -48,6 +48,12 @@ Se alienta alienta al lector a compartir sus soluciones con el autor del problem
   
   * [7.2 Problemas](#72-problemas)
 
+* [8 Ciclos anidados y matrices](#8-ciclos-anidados-y-matrices)
+
+  * [8.1 Conceptos básicos](#81-conceptos-básicos)
+  
+  * [8.2 Problemas](#82-problemas)
+
 ## 1 Entrada y salida I
 
 [ [Índice](#tabla-de-contenidos) ]
