@@ -1350,3 +1350,164 @@ Un elemento clave en la resolución de problemas es la selección de estructuras
     * el programador debe elegir cual de esos antivirus sera el que no es compatible con windows xp.
 
     * si alguno de los programas incluidos no es compatible con windows xp, el programa debe de mostrar cual de los programas es incompatible.
+
+## 8 Ciclos anidados y matrices
+
+[ [Índice](#tabla-de-contenidos) ]
+
+Para recorrer una estructura *lineal*, como los vectores o los arreglos, suele ser necesario el uso de ciclos. No obstante, en ocasiones estas estructuras lineales contienen, en cada elemento, otras estructuras que también se pueden recorrar, como es el caso de la lista de listas, lista de mapas, mapa de listas, entre muchos otros casos. En este contexto, un caso bastante particular y común es la matriz, la cual representa un arreglo de arreglos y que es más fácil de recorrer empleando lo que llamamos *ciclos anidados*.
+
+### 8.1 Conceptos básicos
+
+[ [Índice](#tabla-de-contenidos) ]
+
+* **Ciclo anidado:** un ciclo anidado es aquel que se encuentra dentro de otro ciclo. Por ejemplo, un ```do-while``` dentro de un ```for``` o un ```for``` dentro de otro ```for```. No hay límite en cuanto al nivel de anidamiento, lo que significa se pueden tener ciclos anidados dentro de otros ciclos que, a su vez, están anidados incluso dentro de otros ciclos. No obstante, se debe tener cuidado con el nivel de anidamiento, ya que, dependiendo de la tarea que se esté realizando, puede tener un impacto sobre el rendimiento del código y sobre la *complejidad ciclomática*.
+
+* **Matriz:** una matriz es un arreglo de arreglos. Suelen representar tablas, en las que una de las dimensiones corresponde a las filas y la otra a las columnas. Es común que estas se recorran mediante un ciclo anidado dentro de otro, en donde el ciclo más externo recorre una dimensión y el más interno la otra dimensión. Por ejemplo, un par de ```for```, en donde el for externo recorre las filas de la matriz y el ```for``` interno las columnas **de cierta fila** de la matriz.
+
+* **Figuras con ciclos anidados:** otra utilidad un tanto curiosa de los ciclos anidados es que permiten recorrer en formas particulares. Por ejemplo, hacer un recorrido en zig-zag, en forma de X o incluso en forma de alguna letra del alfabeto.
+
+### 8.2 Problemas
+
+[ [Índice](#tabla-de-contenidos) ]
+
+1. Escriba un programa que reciba un número entero *d* y recorra de 0 hasta *d* en dos dimensiones. En cada paso de la dimensión exterior se deberán mostrar *d* asteriscos seguidos de un salto de línea. Por ejemplo, para una dimensión 5 introducida por el usuario el programa deberá mostrar lo siguiente:
+
+    \*\*\*\*\*
+
+    \*\*\*\*\*
+
+    \*\*\*\*\*
+
+    \*\*\*\*\*
+
+    \*\*\*\*\*
+
+    Esas son cinco filas, cada una con cinco asteríscos.
+
+2. Escriba un programa que muestre una matriz de asteriscos de dimensiones *n* (filas) y *m* (columnas), ambas especificadas por el usuario mediante la entrada del programa.
+
+    Por ejemplo:
+
+    * **Entrada:**
+    
+        * **Filas:** 3
+    
+        * **Columnas:** 4
+
+    * **Salida:**
+
+        \*\*\*\*
+
+        \*\*\*\*
+
+        \*\*\*\*
+
+    **Nota:** el usuario podrá introducir cero como valor de las dimensiones.
+
+3. Escriba un programa que reciba dos dimensiones *n* y *m* y muestre una matriz en la que cada fila será la serie desde 1 hasta *m*.
+
+    Por ejemplo:
+
+    * **Entrada:**
+    
+        * **Filas:** 3
+    
+        * **Columnas:** 4
+
+    * **Salida:**
+
+        1 2 3 4
+
+        1 2 3 4
+
+        1 2 3 4
+
+4. Escriba un programa que reciba dos dimensiones *n* y *m* y muestre una matriz en la que cada celda contenga el valor de su posición.
+
+    Por ejemplo:
+
+    * **Entrada:**
+    
+        * **Filas:** 3
+    
+        * **Columnas:** 4
+
+    * **Salida:**
+
+        ```
+        1  2  3  4
+        5  6  7  8
+        9 10 11 12
+        ```
+
+    * **Consejo:** analizar cómo apoyarse en el número de la fila para determinar el número de la columna. Esto significa entender por qué la primera fila empieza en 1, la segunda en 5 y la última en 9, cómo se relacionan estos números a la fila que se está recorriendo en ese momento.
+
+5. Haga una aplicación que solicite al usuario dos dimensiones y muestre, en la salida estándar, una matriz en donde el valor de cada celda es su posición, pero en orden inverso. Es decir, la primera celda es el último número y la última celda es el primer número.
+
+    Por ejemplo:
+
+    * **Entrada:**
+    
+        * **Filas:** 3
+    
+        * **Columnas:** 4
+
+    * **Salida:**
+
+        ```
+        12 11 10 9
+         8  7  6 5
+         4  3  2 1
+        ```
+
+6. Realize un programa que reciba dos dimensiones y muestre la primera fila y la primera columna de una matriz con tales dimensiones, y en donde cada celda es el valor de su posición.
+
+    Por ejemplo:
+
+    * **Entrada:**
+    
+        * **Filas:** 3
+    
+        * **Columnas:** 4
+
+    * **Salida:**
+
+        ```
+        1 2 3 4
+        5 
+        9
+        ```
+
+    * **Consejo:** el camino para solucionar este tipo de problemas es hacer dos ```for``` anidados **sencillos** y poner dentro del ```for``` más interno algo que decida si se debe mostrar o no el número que se está recorriendo.
+
+7. Realize un programa que reciba una dimensión y muestre la **diagonal principal** de una matriz cuadrada con dicha dimensión. Una matriz cuadrada es una matriz en la cual el número de filas es igual al número de columnas.
+
+    Por ejemplo:
+
+    * **Entrada:** 4
+
+    * **Salida:**
+    ```
+    1
+       6
+         11
+            16
+    ```
+
+    * **Consejo:** el camino para solucionar este tipo de problemas es hacer dos ```for``` anidados **sencillos** y poner dentro del ```for``` más interno algo que decida si se debe mostrar o no el número que se está recorriendo.
+
+8. Realize un programa que reciba una dimensión y muestre la **diagonal inversa** de una matriz cuadrada con dicha dimensión.
+
+    Por ejemplo:
+
+    * **Entrada:** 4
+
+    * **Salida:**
+
+        ```
+                  4
+               7
+           10
+        13
+        ```
