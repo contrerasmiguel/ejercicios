@@ -1396,9 +1396,9 @@ Para recorrer una estructura *lineal*, como los vectores o los arreglos, suele s
     Por ejemplo:
 
     * **Entrada:**
-    
+
         * **Filas:** 3
-    
+
         * **Columnas:** 4
 
     * **Salida:**
@@ -1416,9 +1416,9 @@ Para recorrer una estructura *lineal*, como los vectores o los arreglos, suele s
     Por ejemplo:
 
     * **Entrada:**
-    
+
         * **Filas:** 3
-    
+
         * **Columnas:** 4
 
     * **Salida:**
@@ -1434,14 +1434,14 @@ Para recorrer una estructura *lineal*, como los vectores o los arreglos, suele s
     Por ejemplo:
 
     * **Entrada:**
-    
+
         * **Filas:** 3
-    
+
         * **Columnas:** 4
 
     * **Salida:**
 
-        ```
+        ```text
         1  2  3  4
         5  6  7  8
         9 10 11 12
@@ -1454,14 +1454,14 @@ Para recorrer una estructura *lineal*, como los vectores o los arreglos, suele s
     Por ejemplo:
 
     * **Entrada:**
-    
+
         * **Filas:** 3
-    
+
         * **Columnas:** 4
 
     * **Salida:**
 
-        ```
+        ```text
         12 11 10 9
          8  7  6 5
          4  3  2 1
@@ -1472,14 +1472,14 @@ Para recorrer una estructura *lineal*, como los vectores o los arreglos, suele s
     Por ejemplo:
 
     * **Entrada:**
-    
+
         * **Filas:** 3
-    
+
         * **Columnas:** 4
 
     * **Salida:**
 
-        ```
+        ```text
         1 2 3 4
         5 
         9
@@ -1494,12 +1494,13 @@ Para recorrer una estructura *lineal*, como los vectores o los arreglos, suele s
     * **Entrada:** 4
 
     * **Salida:**
-    ```
-    1
-       6
-         11
-            16
-    ```
+
+        ```text
+        1
+           6
+             11
+                16
+        ```
 
     * **Consejo:** el camino para solucionar este tipo de problemas es hacer dos ```for``` anidados **sencillos** y poner dentro del ```for``` más interno algo que decida si se debe mostrar o no el número que se está recorriendo.
 
@@ -1511,9 +1512,55 @@ Para recorrer una estructura *lineal*, como los vectores o los arreglos, suele s
 
     * **Salida:**
 
-        ```
+        ```text
                   4
                7
            10
         13
         ```
+
+9. Escriba un programa que reciba una dimensión D y muestre las iniciales de su nombre, cada una con una altura cercana a D.
+
+    Por ejemplo:
+
+    * **Entrada:** 5
+
+    * **Salida:**
+
+        ```text
+        *           *
+        *  *     *  *
+        *     *     *
+        *           *
+        *           *
+        ```
+
+        ```text
+             *
+            * *
+           *   *
+          * * * *
+         *       *
+        *         *
+        ```
+
+        ```text
+        *  *  *  *
+        *
+        *
+        *
+        *
+        *  *  *  *
+        ```
+
+        ```text
+        *
+        *
+        *
+        *
+        *  *  *
+        ```
+
+    * **Nota:** una altura cercana a la dimensión que introduce el usuario es aquella que es igual o mayor por, a lo sumo, un número de D. Por ejemplo, la altura 6 es cercana a la dimensión 5. En otro ejemplo, la altura 7 ya no es cercana a la dimensión 5.
+
+    * **Consejo:** escribir cada letra en una función, con el propósito de que el esfuerzo de diseñar cada una no interfiera con el de las otras letras. Cada función puede recibir la dimensión y decidir, internamente, la forma en la que mostrará la letra.
