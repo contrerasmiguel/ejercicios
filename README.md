@@ -1561,6 +1561,6 @@ Para recorrer una estructura *lineal*, como los vectores o los arreglos, suele s
         *  *  *
         ```
 
-    * **Nota:** una altura cercana a la dimensión que introduce el usuario es aquella que es igual o mayor por, a lo sumo, un número de D. Por ejemplo, la altura 6 es cercana a la dimensión 5. En otro ejemplo, la altura 7 ya no es cercana a la dimensión 5.
+    * **Nota:** una altura cercana a la dimensión que introduce el usuario es aquella que es igual o mayor, a lo sumo, un número de D. Por ejemplo, la altura 6 es cercana a la dimensión 5. En otro ejemplo, la altura 7 ya no es cercana a la dimensión 5.
 
-    * **Consejo:** escribir cada letra en una función, con el propósito de que el esfuerzo de diseñar cada una no interfiera con el de las otras letras. Cada función puede recibir la dimensión y decidir, internamente, la forma en la que mostrará la letra.
+    * **Consejo:** escribir cada letra en una función, con el propósito de que el esfuerzo de diseñar una no interfiera con el de las otras letras. Cada función puede recibir la dimensión y decidir, internamente, la forma en la que mostrará la letra.
