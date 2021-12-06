@@ -1564,3 +1564,31 @@ Para recorrer una estructura *lineal*, como los vectores o los arreglos, suele s
     * **Nota:** una altura cercana a la dimensión que introduce el usuario es aquella que es igual o mayor, a lo sumo, un número de D. Por ejemplo, la altura 6 es cercana a la dimensión 5. En otro ejemplo, la altura 7 ya no es cercana a la dimensión 5.
 
     * **Consejo:** escribir cada letra en una función, con el propósito de que el esfuerzo de diseñar una no interfiera con el de las otras letras. Cada función puede recibir la dimensión y decidir, internamente, la forma en la que mostrará la letra.
+
+10. Realice una aplicación que grafique la estrella de David con una altura especificada por el usuario. El usuario también podrá espeficiar el caracter con el que prefiera que se rellene la figura.
+
+    Ejemplo:
+
+    * **Entrada:**
+
+        * **Altura**: 9
+
+        * **Caracter:** O
+
+    * **Salida:**
+
+        ```text
+                     O
+                    OOO
+                  OOOOOOO
+                OOOOOOOOOOO
+        OOOOOOOOOOOOOOOOOOOOOOOOOOO
+          OOOOOOOOOOOOOOOOOOOOOOO
+            OOOOOOOOOOOOOOOOOOO
+          OOOOOOOOOOOOOOOOOOOOOOO
+        OOOOOOOOOOOOOOOOOOOOOOOOOOO
+                OOOOOOOOOOO
+                  OOOOOOO
+                    OOO
+                     O
+        ```
