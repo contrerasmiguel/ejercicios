@@ -1571,7 +1571,7 @@ Para recorrer una estructura *lineal*, como los vectores o los arreglos, suele s
 
     * **Entrada:**
 
-        * **Altura**: 9
+        * **Altura**: 13
 
         * **Caracter:** O
 
