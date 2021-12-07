@@ -54,6 +54,12 @@ Se alienta alienta al lector a compartir sus soluciones con el autor del problem
   
   * [8.2 Problemas](#82-problemas)
 
+* [9 Arreglos multidimensionales](#9-arreglos-multidimensionales)
+
+  * [9.1 Conceptos básicos](#91-conceptos-básicos)
+  
+  * [9.2 Problemas](#92-problemas)
+
 ## 1 Entrada y salida I
 
 [ [Índice](#tabla-de-contenidos) ]
@@ -1592,3 +1598,122 @@ Para recorrer una estructura *lineal*, como los vectores o los arreglos, suele s
                     OOO
                      O
         ```
+
+## 9 Arreglos multidimensionales
+
+[ [Índice](#tabla-de-contenidos) ]
+
+La selección de la estructura de datos correcta es fundamental para la solución de un problema. En ese sentido, algunos problemas se representan mejor con estructuras anidadas, como las listas de listas, mapas de listas, listas de mapas, etc. Un caso especial de tales estructuras es el arreglo multidimensional, que no es más que un arreglo de arreglos.
+
+### 9.1 Conceptos básicos
+
+[ [Índice](#tabla-de-contenidos) ]
+
+* **Arreglo multidimensional:** un arreglo multidimensional es aquel en el que cada elemento es, a su vez, otro arreglo, en otras palabras, aquellos que forman arreglos de arreglos. La forma más simple de tales estructuras son los arreglos de dos dimensiones, los cuáles también son llamados matrices. Estas se declaran de la siguiente forma en C++:
+
+    ```cpp
+    // Matriz de flotantes de 10 espacios, cada uno con 32 flotantes
+    float mi_arreglo[10][32];
+    ```
+
+* **Representación interna de los arreglos multidimensionales:** a pesar de que es más fácil visualizar los arreglos multidimensionales como matrices, en memoria no son más que arreglos lineales de mayor tamaño. Por ejemplo, consideremos una matriz de números consecutivos de dimensión 3x4. Por conveniencia, solemos visualizarla de la siguiente manera:
+
+    ```text
+    1  2  3  4
+    5  6  7  8
+    9 10 11 12
+    ```
+
+    Otra personas prefieren visualizarlo de de otras formas. Por ejemplo:
+
+    ```text
+    1 5  9
+    2 6 10
+    3 7 11
+    4 8 12
+    ```
+
+    Sin embargo, en memoria, una matriz no es más que una arreglo de una sola dimensión, solo que su tamaño se expande para acomodar todos los elementos. En memoria luciría de la siguiente forma:
+
+    ```text
+    1 2 3 4 5 6 7 8 9 10 11 12
+    ```
+
+* **Apuntadores y arreglos:** bajo el capó, en C++, todos los arreglos son apuntadores. Esto significa que las variables que los representan en realidad **no contienen** los elementos del arreglo, sino que almacenan las direcciones de memoria en donde se ubican los comienzos de cada arreglo. Esto implica algunas cosas:
+
+    1. En ellos podemos utilizar la notación de apuntadores (Los operadores ```->``` y ```*```)
+
+    2. Cuando se pasan como argumento a funciones, no se copian sus valores si no que se pasan referencias a memoria. Esto le permite a la función acceder al arreglo original, provenga de donde provenga.
+
+    3. Cuando se copia una variable apuntadora a un arreglo, lo que se copia en realidad es la dirección de memoria. Si se deseara copiar el contenido, se tendrá que hacer manualmente, recorriendo el arreglo y copiando elemento por elemento.
+
+### 9.2 Problemas
+
+[ [Índice](#tabla-de-contenidos) ]
+
+1. Dominguito pintó un tablero de ajedrez en su patio y en cada casilla colocó una balanza digital. Seguidamente, montó a 64 de sus gallinas en las distintas balanzas, y anotó sus pesos en una especie de dibujo. No obstante, dibujar no es el fuerte de Dominguito, por lo que decidió contratarte para que le construyas una aplicación que reciba los pesos de las gallinas y te les muestre en algún tipo de cuadrícula. Hazle el programa a Dominguito.
+
+    En la solución, se le debe permitir a Dominguito especificar las dimensiones de la cuadrícula, además de ingresar los datos, indicándole por cada gallina la posición exacta que está por introducir.
+
+    1.1. Jean Carlos, el vecino de Dominguito, que también cría gallinas, le gustó el programa que le entregaste. Es por ello que decidió contratarte para que le hagas uno similar. La única cosa que desea que le cambien es que prefiere que los datos se introduzcan diferentes a los de Dominguito, así como se explica a continuación:
+
+    * Si en el de Dominguito se debía introducir fila por fila, en el de Jean se introducirá columna por columna.
+
+    * Si en el de Dominguito se debía introducir columna por columna, en el de su vecino se hará fila por fila.
+
+2. Realice un programa que solicite al usuario una matriz de números decimales, cuya dimensión también pueden escoger ellos y que reduzca tal matriz a un arreglo, en donde cada elemento será el promedio de cada columna.
+
+    El promedio de N números es la suma de tales números dividida entre N. Por ejemplo, el promedio de 3, 6 y 15 es *(3 + 6 + 15) / 3*, en donde el tres que divide es la cantidad de elementos. Otro ejemplo sería el promedio de 9 y 10, que equivale a *(9 + 10) / 2*.
+
+    Suponiendo que el usuario introduzca la siguiente matriz 3x3:
+
+    ```text
+    3  9 1
+    0 11 5
+    9  1 2
+    ```
+
+    El arreglo resultante sería:
+
+    ```text
+    4 7 2.67
+    ```
+
+    **Razonamiento:** en el resultado:
+
+    * 4 es el resultado de (3 + 0 + 9) / 3
+
+    * 7 es el resultado de (9 + 11 + 1) / 3
+
+    * 2.67 es el resultado aproximado de (1 + 5 + 2) / 3. En el caso del programa, no importaría si muestra más posiciones decimales.
+
+3. Escriba una aplicación que permita al usuario introducir una matriz cuadrada de una dimensión de su preferencia. Seguidamente, el programa deberá mostrar al usuario los números pertenecientes a las diagonales principal y segundaria de tal matriz.
+
+4. Realice un programa que le permita al usuario introducir una matriz de números decimales. Luego el programa le preguntará al usuario por una posición para modificar un número. Finalmente, el programa mostrará la matriz original y la matriz modificada.
+
+5. Escriba un programa que permita al usuario introducir una matriz de números enteros de la dimensión que desee y, seguidamente, los muestre, en forma de matriz, pero ordenados en forma ascendente.
+
+6. Escriba un programa que permita al usuario introducir una matriz de números enteros de la dimensión que desee y, seguidamente, los muestre, en forma de matriz, pero ordenados en forma descendente.
+
+7. Escriba un programa que permita al usuario introducir una matriz de números enteros de la dimensión que desee y, seguidamente, los muestre, en forma de matriz en zig-zag, pero ordenados en forma ascendente.
+
+    6.1. Realice el mismo ejercicio, pero haciendo el zig-zag en otra dimensión. Por ejemplo, si en la primera parte la dirección cambia en cada fila, en esta parte la dirección cambiará en cada columna.
+
+8. Escriba un programa que permita al usuario introducir una matriz de números enteros de la dimensión que desee y, seguidamente, los muestre, en forma de matriz en espiral, pero ordenados en forma descendente, en donde el número más pequeño estará en el centro de la matriz y el mayor en la parte más exterior de la matriz.
+
+9. Escribir un programa que lea una matriz de 3 filas y 3 columnas de valores enteros. A continuación, el programa debe pedir el número de una fila. El programa deberá devolver el máximo de esa fila.
+
+10. Escribir un programa que lea un matriz de enteros de 2 filas y 4 columnas y muestre por pantalla la traspuesta a dicha matriz.
+
+    Ejemplo:
+
+    ```text
+    Entrada:    2 3 4 5      Salida     2 7
+                7 6 5 4                 3 6
+                                        4 5
+                                        5 4
+    ```
+
+11. Escribir un programa que lea una matriz de números enteros y que devuelva la suma de los elementos positivos de la matriz y la suma de los elementos negativos.
+
+12. Escribir un programa que lea una matriz de enteros de 4 filas y 4 columnas y a continuación intercambie la fila i con la fila j, siendo i y j dos valores introducidos por teclado.
