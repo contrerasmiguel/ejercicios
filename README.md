@@ -1697,7 +1697,7 @@ La selección de la estructura de datos correcta es fundamental para la solució
 
 7. Escriba un programa que permita al usuario introducir una matriz de números enteros de la dimensión que desee y, seguidamente, los muestre, en forma de matriz en zig-zag, pero ordenados en forma ascendente.
 
-    6.1. Realice el mismo ejercicio, pero haciendo el zig-zag en otra dimensión. Por ejemplo, si en la primera parte la dirección cambia en cada fila, en esta parte la dirección cambiará en cada columna.
+    7.1. Realice el mismo ejercicio, pero haciendo el zig-zag en otra dimensión. Por ejemplo, si en la primera parte la dirección cambia en cada fila, en esta parte la dirección cambiará en cada columna.
 
 8. Escriba un programa que permita al usuario introducir una matriz de números enteros de la dimensión que desee y, seguidamente, los muestre, en forma de matriz en espiral, pero ordenados en forma descendente, en donde el número más pequeño estará en el centro de la matriz y el mayor en la parte más exterior de la matriz.
 
