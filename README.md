@@ -1708,7 +1708,7 @@ La selección de la estructura de datos correcta es fundamental para la solució
     Ejemplo:
 
     ```text
-    Entrada:    2 3 4 5      Salida     2 7
+    Entrada:    2 3 4 5      Salida:    2 7
                 7 6 5 4                 3 6
                                         4 5
                                         5 4
@@ -1717,3 +1717,39 @@ La selección de la estructura de datos correcta es fundamental para la solució
 11. Escribir un programa que lea una matriz de números enteros y que devuelva la suma de los elementos positivos de la matriz y la suma de los elementos negativos.
 
 12. Escribir un programa que lea una matriz de enteros de 4 filas y 4 columnas y a continuación intercambie la fila i con la fila j, siendo i y j dos valores introducidos por teclado.
+
+13. Escriba un programa que solicite al usuario una matriz de su preferencia y la muestre, pero con sus filas en orden invertido. Por ejemplo:
+
+    * **Entrada:**
+
+        ```text
+        1  2  3  4
+        5  6  7  8
+        9 10 11 12
+        ```
+
+    * **Salida:**
+
+        ```text
+        9 10 11 12
+        5  6  7  8
+        1  2  3  4
+        ```
+
+14. Escriba un programa que solicite al usuario una matriz de su preferencia y la muestre, pero con sus columnas en orden invertido. Por ejemplo:
+
+    * **Entrada:**
+
+        ```text
+        1  2  3  4
+        5  6  7  8
+        9 10 11 12
+        ```
+
+    * **Salida:**
+
+        ```text
+         4  3  2 1
+         8  7  6 5
+        12 11 10 9
+        ```
