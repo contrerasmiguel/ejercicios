@@ -60,6 +60,12 @@ Se alienta alienta al lector a compartir sus soluciones con el autor del problem
   
   * [9.2 Problemas](#92-problemas)
 
+* [10 Arreglos de tipos compuestos](#10-arreglos-de-tipos-compuestos)
+
+  * [10.1 Conceptos básicos](#101-conceptos-básicos)
+  
+  * [10.2 Problemas](#102-problemas)
+
 ## 1 Entrada y salida I
 
 [ [Índice](#tabla-de-contenidos) ]
@@ -1753,3 +1759,61 @@ La selección de la estructura de datos correcta es fundamental para la solució
          8  7  6 5
         12 11 10 9
         ```
+
+## 10 Arreglos de tipos compuestos
+
+[ [Índice](#tabla-de-contenidos) ]
+
+Así como existen arreglos de tipos primitivos, como ```float``` e ```int```, es posible definir arreglos de datos compuestos, como las ```struct``` y las clases. Por ejemplo, se podría tener un arreglo de tipo ```person```, el cual representaría una lista de personas, cada una con un conjunto de características como el nombre, el apellido, la edad, entre otros posibles rasgos.
+
+### 10.1 Conceptos básicos
+
+[ [Índice](#tabla-de-contenidos) ]
+
+* **Tipo de dato primitivo:** en algunos lenguajes de programación, existe la noción de tipo de dato primitivo, que se refiere a aquellos que son proporcionados por el lenguaje de programación y con los que podemos, en ocasiones, construir estructuras de datos. Ejemplos de tipos primitivos en C++ incluyen ```int```, ```float```, ```double``` y ```bool```.
+
+* **Estructuras de datos:** en el sentido más simple, una estructura de datos es la composición de diferentes variables, cada una con su tipo de dato. Un ejemplo sería la ```fecha```, la cual podría definirse como la composición de tres números enteros que representarían el año, el mes y el día. Otro ejemplo sería el tipo de dato  ```persona```, que se podría definir como un nombre, un apellido y una ```fecha``` de nacimiento.
+
+* **Arreglos de tipos compuestos:** un arreglo de tipo compuesto es un arreglo en el que el tipo de dato no es primitivo. Ejemplos incluyen arreglos de personas, arreglos de gatos y arreglos de fechas, mientras que ejemplos de arreglos de tipo primitivo incluirían los típicos arreglos de ```int``` y arreglos de ```float```, entre muchos otras variaciones.
+
+### 10.2 Problemas
+
+[ [Índice](#tabla-de-contenidos) ]
+
+1. Realice una aplicación que solicite al usuario los datos de cinco personas y luego los muestre en pantalla de manera organizada. Cada persona tiene un nombre, una edad y un peso, que puede ser decimal.
+
+2. Realice una aplicación que solicite al usuario los datos de cinco personas, cada una con nombre, edad y altura. Luego de introducidos los datos, la aplicación deberá mostrar a dichas personas pero reorganizadas por altura, en donde la persona más alta será la primera en la lista y la más baja será la última.
+
+3. Realice una aplicación que solicite al usuario los datos de cinco personas, cada una con nombre, una edad y altura. Luego de introducidos los datos, la aplicación deberá mostrar a dichas personas pero reorganizadas por el nombre, en donde las personas cuyos nombres sean menores lexicográficamente deben estar por encima de aquellas con nombres lexicográficamente mayores.
+
+    Ejemplo:
+
+    ```text
+    Nombre: Adam
+    Edad: 59
+    Altura: 180 cm
+
+    Nombre: Jamie
+    Edad: 61
+    Altura: 182 cm
+    
+    Nombre: Kent Paul
+    Edad: 110
+    Altura: 175 cm
+
+    ...
+    ```
+
+4. Construya un programa que le permita al usuario introducir un máximo de 128 gatos, cada uno con un nombre, una edad y una raza. Luego de que el usuario termine de ingresar los datos, el programa deberá mostrarlos de una manera limpia, ordenados lexicográficamente por sus nombres de manera descendente.
+
+5. Escriba una aplicación que permita al usuario gestionar juegos, cada uno un nombre, un peso en megabytes y una puntuación. La gestión consiste en las siguientes funcionalidades:
+
+    * Agregar juegos (máximo 64)
+
+    * Quitar juegos
+
+    * Ver el listado de los juegos, ordenados por puntuación y de manera descendente
+
+    * Ver el listado de los juegos, ordenados por peso y de manera ascendente
+
+    **Consejo:** emplear un menú de usuario.
