@@ -1817,3 +1817,71 @@ Así como existen arreglos de tipos primitivos, como ```float``` e ```int```, es
     * Ver el listado de los juegos, ordenados por peso y de manera ascendente
 
     **Consejo:** emplear un menú de usuario.
+
+6. Realice una aplicación que simule el juego de Fizz Buzz para un arreglo de numeros enteros. El juego debe seguir las siguientes directrices:
+
+    1. La aplicación debe tener, inicialmente, un arreglo con una serie de números **especificados por el programador**.
+
+    2. El programa debe recorrer el arreglo de números y, en cada elemento, ejecutar el siguiente algoritmo:
+
+        * Si el número es múltiplo de 3, mostrar Fizz
+
+        * Si el número es múltiplo de 5, mostrar Buzz
+
+        * Si el número es múltiplo de ambos, 3 y 5, mostrar Fizz Buzz
+
+        * Si no se da ninguno de los casos anteriores, mostrar el número
+
+7. Realice una aplicación que simule el juego de Fizz Buzz para un arreglo de numeros enteros. El juego debe seguir las siguientes directrices:
+
+    1. La aplicación debe tener, inicialmente, un arreglo con una serie de números **especificados por el programador**.
+
+    2. El programa debe recorrer el arreglo de números y, en cada elemento, ejecutar el siguiente algoritmo:
+
+        * Si el número es múltiplo de 3, almacenar *Fizz* en la lista de respuestas
+
+        * Si el número es múltiplo de 5, almacenar *Buzz* en la lista de respuestas
+
+        * Si el número es múltiplo de ambos, 3 y 5, almacenar *Fizz Buzz* en la lista de respuestas
+
+        * Si no se da ninguno de los casos anteriores, almacenar el número en la lista de respuestas
+
+    3. Luego de haber recorrido el arreglo de números y de haber almacenado todas las respuestas, mostrar estas últimas en orden inverso.
+
+    **Consejo:** determinar cuál sería la mejor estructura de datos para almacenar las respuestas, dado que se tienen que mostrar, al final, en orden inverso.
+
+8. Escriba una aplicación que solicite al usuario un número entero positivo, para luego mostrar la representación de dicho número en base binaria. Por ejemplo:
+
+    **Entrada del usuario:** 23
+
+    **Salida del programa:** 10111
+
+9. Escriba un programa que solicite al usuario un número binario, para luego mostrar la representación de dicho número en base 10, es decir, números decimales. Por ejemplo:
+
+    **Entrada del usuario:** 100111
+
+    **Salida del programa:** 39
+
+    **Consejo:** en este caso, números decimales es solo otra forma de decir números de base 10 y no números flotantes.
+
+10. Construya un aplicativo que gestione una serie de automóviles suministrados por el usuario. Cada vehículo tendrá los siguientes atributos:
+
+    * Marca
+
+    * Año
+
+    * Porcentaje de salud del vehículo
+
+    El programa debe tener un menú con las siguientes opciones:
+
+    * Mostrar el listado de vehículos
+
+    * Agregar vehículos
+
+    * Eliminar vehículos
+
+    * Cambiar el porcentaje de salud de un vehículo
+
+    * Ordenar los vehículos por alguno de sus atributos
+
+    **Nota:** un vehículo totalmente dañado tendrá un porcentaje de salud de 0, mientras que 100% es el mejor porcentaje de salud posible.
